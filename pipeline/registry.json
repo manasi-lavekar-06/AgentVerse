@@ -1,0 +1,92 @@
+{
+  "transcripts": {
+    "intro_to_flowcal_video_1_transcript.txt": {
+      "processed_at": "2026-07-03",
+      "contributed_to": [
+        "core-features/additionally-flow-another.md"
+      ]
+    },
+    "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt": {
+      "processed_at": "2026-09-21",
+      "contributed_to": [
+        "getting-started/flowcal-data-journey.md",
+        "core-features/meters.md",
+        "core-features/volume-editor.md",
+        "core-features/locations.md",
+        "core-features/tickets.md",
+        "core-features/rollup-viewers.md"
+      ]
+    }
+  },
+  "categories": {
+    "core-features/additionally-flow-another.md": {
+      "topics_covered": [
+        "I will be providing a high level overview of the flow-cal ap",
+        "Another method of getting data into flow-cal might be more o",
+        "Additionally, there are thousands of built-in validations ba",
+        "Another piece of information that you'll see in flowcat is a",
+        "Additionally in the bottom we also have the Skater Request p",
+        "Additionally, you can also have the scheduler push data out ",
+        "Additionally, you might also use the scheduler to automatica"
+      ],
+      "sources": [
+        "intro_to_flowcal_video_1_transcript.txt"
+      ]
+    },
+    "getting-started/flowcal-data-journey.md": {
+      "topics_covered": [
+        "Security: users and groups",
+        "End-to-end FLOWCAL data flow (meter to report)"
+      ],
+      "sources": [
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "core-features/meters.md": {
+      "topics_covered": [
+        "What a meter is physically / FLOCON filter",
+        "Meter types (Coriolis/turbine) and pressure/temperature base"
+      ],
+      "sources": [
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "core-features/volume-editor.md": {
+      "topics_covered": [
+        "Creating a liquid meter (gas vs liquid)",
+        "Product setup and density (Table E product)",
+        "Meter factor and pressure/temperature base defaults",
+        "Periodic vs batch data and contract hour/day"
+      ],
+      "sources": [
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "core-features/locations.md": {
+      "topics_covered": [
+        "Systems and the default enterprise system",
+        "Adding meters to a location"
+      ],
+      "sources": [
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "core-features/tickets.md": {
+      "topics_covered": [
+        "What a ticket is vs a meter",
+        "Creating a new ticket"
+      ],
+      "sources": [
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "core-features/rollup-viewers.md": {
+      "topics_covered": [
+        "Roll Up Viewer for a location"
+      ],
+      "sources": [
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    }
+  }
+}

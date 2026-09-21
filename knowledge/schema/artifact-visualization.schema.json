@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "flowcal-knowledge-hub/artifact-visualization.schema.json",
+  "title": "Visualization Artifact",
+  "description": "Output of the Visualization Agent. Proposed Visual Story slide markup, handed to the Publishing Agent (which is the only agent allowed to write docs/visual/index.md).",
+  "type": "object",
+  "required": ["run_id", "agent", "generated_at", "knowledge_objects", "slides", "target_file"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "agent": { "const": "visualization" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "knowledge_objects": { "type": "array", "items": { "type": "string" } },
+    "target_file": { "type": "string", "default": "docs/visual/index.md" },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ko_id", "slug", "order", "markup"],
+        "properties": {
+          "ko_id": { "type": "string" },
+          "slug": { "type": "string", "description": "Used as vs-slide--<slug> CSS class." },
+          "order": { "type": "integer" },
+          "markup": { "type": "string", "description": "HTML fragment matching the existing vs-slide markup pattern." }
+        }
+      }
+    }
+  }
+}

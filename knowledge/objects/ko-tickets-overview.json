@@ -1,0 +1,67 @@
+{
+  "id": "ko-tickets-overview",
+  "slug": "tickets-overview",
+  "title": "Tickets Overview",
+  "category": "core-features/tickets.md",
+  "status": "published",
+  "summary": "Explains how a ticket differs from a meter's flowing data and how a new ticket is created for a single point in time.",
+  "sections": [
+    {
+      "heading": "What Is a Ticket",
+      "body": "A ticket is similar to a meter in that it belongs to a meter, but where a meter has flowing data captured continuously (for example, each hour), a ticket represents data for a single point in time rather than a periodic record.",
+      "key_points": [
+        "A meter captures flowing data continuously, e.g. each hour.",
+        "A ticket represents a single point-in-time record rather than a periodic one."
+      ]
+    },
+    {
+      "heading": "Creating a New Ticket",
+      "body": "To create a ticket, click on the meter to see its empty data grid, then choose the option to create a new ticket. Because a ticket is a one-time record rather than a periodic one, the product and applicable temperature (and similar fields) must be selected manually for that entry.",
+      "key_points": [
+        "New tickets are created from the meter's empty grid via a 'create new ticket' option.",
+        "Ticket entries require manually selecting fields such as product and temperature, since there is no periodic record to draw from."
+      ]
+    }
+  ],
+  "tags": ["tickets", "meters", "point-in-time"],
+  "sources": [
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+  ],
+  "relationships": [
+    { "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "type": "related-to", "target": "ko-locations-and-systems" }
+  ],
+  "faqs": [
+    {
+      "question": "How does a FLOWCAL ticket differ from a meter's flowing data?",
+      "options": [
+        "A ticket represents a single point-in-time record rather than continuous data",
+        "A ticket only exists for gas meters",
+        "A ticket replaces the need for a location",
+        "A ticket is generated automatically every hour like periodic data"
+      ],
+      "correct_index": 0,
+      "explanation": "The What Is a Ticket section explains a meter captures continuous flowing data while a ticket is a single point-in-time record."
+    },
+    {
+      "question": "Why must fields like product and temperature be selected manually when creating a new ticket?",
+      "options": [
+        "Because tickets are periodic and copy prior values automatically",
+        "Because there is no periodic record for the ticket to draw values from",
+        "Because tickets do not support products",
+        "Because manual import always overrides ticket fields"
+      ],
+      "correct_index": 1,
+      "explanation": "The Creating a New Ticket section notes these fields are manual since a ticket, unlike a periodic record, has no prior data to draw from."
+    }
+  ],
+  "visual_story": {
+    "eligible": true,
+    "journey_order": 5,
+    "slide_hint": "data-dark theme with a grid mockup contrasting periodic meter rows against a single one-point-in-time ticket row"
+  },
+  "version": 3,
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21",
+  "published_pages": ["core-features/tickets.md", "visual/index.md", "practice/core-features-quiz.md"]
+}

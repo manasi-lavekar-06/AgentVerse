@@ -1,0 +1,22 @@
+{
+  "run_id": "run-20260921-flowcal-overview",
+  "agent": "publishing",
+  "generated_at": "2026-09-21T12:00:00Z",
+  "pages_created": [
+    "docs/getting-started/flowcal-data-journey.md",
+    "docs/core-features/meters.md",
+    "docs/core-features/volume-editor.md",
+    "docs/core-features/locations.md",
+    "docs/core-features/tickets.md",
+    "docs/core-features/rollup-viewers.md"
+  ],
+  "pages_updated": [],
+  "quiz_pages_updated": [
+    "docs/practice/getting-started-quiz.md",
+    "docs/practice/core-features-quiz.md"
+  ],
+  "visual_story_updated": true,
+  "nav_entries_added": [],
+  "registry_updated": true,
+  "transcript_moved_to": null
+}

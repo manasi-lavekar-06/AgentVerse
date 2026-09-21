@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "flowcal-knowledge-hub/artifact-extraction.schema.json",
+  "title": "Knowledge Extraction Artifact",
+  "description": "Output of the Knowledge Extraction Agent. Handed to the Knowledge Enrichment Agent.",
+  "type": "object",
+  "required": ["run_id", "agent", "generated_at", "source_transcript", "knowledge_objects"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "agent": { "const": "knowledge-extraction" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "source_transcript": { "type": "string" },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "heading": { "type": "string" },
+          "match_type": {
+            "type": "string",
+            "enum": ["existing-ko", "new-ko-existing-category", "new-category"]
+          },
+          "matched_ko_id": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "knowledge_objects": {
+      "type": "array",
+      "description": "IDs of draft Knowledge Objects created or updated under knowledge/objects/.",
+      "items": { "type": "string" }
+    },
+    "unmatched_topics": { "type": "array", "items": { "type": "string" } }
+  }
+}

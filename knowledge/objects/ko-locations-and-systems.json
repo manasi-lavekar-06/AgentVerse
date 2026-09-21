@@ -1,0 +1,64 @@
+{
+  "id": "ko-locations-and-systems",
+  "slug": "locations-and-systems",
+  "title": "Locations and Systems",
+  "category": "core-features/locations.md",
+  "status": "published",
+  "summary": "Covers the concept of a FLOWCAL system (with 'enterprise' as the default) and how locations are set up so that one or more meters can be added to them.",
+  "sections": [
+    {
+      "heading": "Systems and Enterprise",
+      "body": "FLOWCAL has a default system called enterprise. A customer may set up additional systems - for example, a separate system using a different set of units - alongside the default enterprise system.",
+      "key_points": [
+        "The default FLOWCAL system is called enterprise.",
+        "Additional systems can be configured, such as one using a different unit set, alongside enterprise."
+      ]
+    },
+    {
+      "heading": "Adding Meters to a Location",
+      "body": "A location represents a physical or logical grouping in FLOWCAL, and it is possible for multiple meters to belong to the same location. Meters are added to a location as part of setting it up.",
+      "key_points": [
+        "A single location can contain multiple meters.",
+        "Meters are attached to a location during location setup."
+      ]
+    }
+  ],
+  "tags": ["locations", "systems", "enterprise", "units"],
+  "sources": [
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+  ],
+  "relationships": [
+    { "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "type": "related-to", "target": "ko-liquid-meter-product-setup" },
+    { "type": "prerequisite-of", "target": "ko-tickets-overview" },
+    { "type": "prerequisite-of", "target": "ko-rollup-viewer-basics" }
+  ],
+  "faqs": [
+    {
+      "question": "What is the name of FLOWCAL's default system?",
+      "options": ["Standard", "Enterprise", "Core", "Primary"],
+      "correct_index": 1,
+      "explanation": "The Systems and Enterprise section states FLOWCAL's default system is called enterprise."
+    },
+    {
+      "question": "Can multiple meters belong to the same FLOWCAL location?",
+      "options": [
+        "No, only one meter per location is allowed",
+        "Yes, a single location can contain multiple meters",
+        "Only if they are the same meter type",
+        "Only after PPA approval"
+      ],
+      "correct_index": 1,
+      "explanation": "The Adding Meters to a Location section confirms a single location can contain multiple meters."
+    }
+  ],
+  "visual_story": {
+    "eligible": true,
+    "journey_order": 4,
+    "slide_hint": "hierarchy theme showing Enterprise system -> Location -> Meters tree"
+  },
+  "version": 3,
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21",
+  "published_pages": ["core-features/locations.md", "visual/index.md", "practice/core-features-quiz.md"]
+}

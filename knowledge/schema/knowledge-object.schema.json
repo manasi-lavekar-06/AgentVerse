@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "flowcal-knowledge-hub/knowledge-object.schema.json",
+  "title": "Knowledge Object",
+  "description": "Canonical source-of-truth record for one unit of FLOWCAL product knowledge. Stored at knowledge/objects/<id>.json. Rendered into docs/*.md by the Publishing Agent — never hand-edited in docs/.",
+  "type": "object",
+  "required": ["id", "slug", "title", "category", "status", "summary", "sections", "version", "created_at", "updated_at", "sources"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ko-[a-z0-9-]+$",
+      "description": "Stable identifier, e.g. ko-scada-polling. Never changes once assigned."
+    },
+    "slug": { "type": "string", "description": "Kebab-case slug derived from title, used to build the id." },
+    "title": { "type": "string" },
+    "category": {
+      "type": "string",
+      "description": "Target docs page, relative to docs/, e.g. core-features/scada-integration.md"
+    },
+    "status": { "type": "string", "enum": ["draft", "enriched", "published"] },
+    "summary": { "type": "string", "description": "1-3 sentence overview shown at the top of the rendered page." },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["heading", "body"],
+        "properties": {
+          "heading": { "type": "string" },
+          "body": { "type": "string" },
+          "key_points": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "sources": {
+      "type": "array",
+      "description": "Append-only audit trail of transcripts that contributed to this Knowledge Object.",
+      "items": {
+        "type": "object",
+        "required": ["transcript", "extracted_at"],
+        "properties": {
+          "transcript": { "type": "string" },
+          "extracted_at": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target"],
+        "properties": {
+          "type": { "type": "string", "enum": ["related-to", "prerequisite-of", "part-of", "extends"] },
+          "target": { "type": "string", "description": "id of the related Knowledge Object" }
+        }
+      }
+    },
+    "faqs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question", "options", "correct_index", "explanation"],
+        "properties": {
+          "question": { "type": "string" },
+          "options": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+          "correct_index": { "type": "integer", "minimum": 0 },
+          "explanation": { "type": "string" }
+        }
+      }
+    },
+    "visual_story": {
+      "type": "object",
+      "properties": {
+        "eligible": { "type": "boolean", "description": "Whether this KO should appear as a Visual Story slide." },
+        "journey_order": { "type": "integer", "description": "Sort position in the animated slide sequence." },
+        "slide_hint": { "type": "string", "description": "Short cue for the visual metaphor/diagram to use." }
+      }
+    },
+    "version": { "type": "integer", "minimum": 1 },
+    "created_at": { "type": "string", "format": "date" },
+    "updated_at": { "type": "string", "format": "date" },
+    "published_pages": { "type": "array", "items": { "type": "string" } }
+  }
+}

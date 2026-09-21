@@ -1,0 +1,112 @@
+site_name: FLOWCAL Knowledge Hub
+site_description: End-user knowledge base for the FLOWCAL product suite
+site_author: FLOWCAL Team
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: custom
+      accent: deep-orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: deep-orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.path
+    - navigation.prune
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - content.tooltips
+    - announce.dismiss
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/gauge
+    repo: fontawesome/brands/github
+    admonition:
+      note:    octicons/tag-16
+      tip:     octicons/flame-16
+      warning: octicons/alert-16
+      info:    octicons/info-16
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index:     !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+# nav is explicit (MkDocs Material only auto-discovers when nav is absent entirely).
+# The Publishing Agent appends new page entries here under the matching tab below —
+# it does not restructure existing tabs or reorder entries.
+#   getting-started/ → "Getting Started" tab
+#   core-features/   → "Core Features" tab
+#   practice/        → "Practice" tab (quiz decks)
+#   visual/          → "Visual Story" tab
+#   workflows/       → "Workflows" tab
+#   misc/            → "Misc" tab (pipeline fallback for unclassified content)
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - FLOWCAL Data Journey: getting-started/flowcal-data-journey.md
+  - Core Features:
+      - Meters: core-features/meters.md
+      - Volume Editor: core-features/volume-editor.md
+      - Locations: core-features/locations.md
+      - Tickets: core-features/tickets.md
+      - Rollup Viewers: core-features/rollup-viewers.md
+  - Practice:
+      - Getting Started Quiz: practice/getting-started-quiz.md
+      - Core Features Quiz: practice/core-features-quiz.md
+  - Visual Story: visual/index.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@flowcal.internal
+      name: Email Support
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/visual.js

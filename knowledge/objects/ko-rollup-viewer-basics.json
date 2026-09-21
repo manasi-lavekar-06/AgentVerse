@@ -1,0 +1,49 @@
+{
+  "id": "ko-rollup-viewer-basics",
+  "slug": "rollup-viewer-basics",
+  "title": "Rollup Viewer Basics",
+  "category": "core-features/rollup-viewers.md",
+  "status": "published",
+  "summary": "Introduces the Roll Up Viewer, which shows how a location's meter data aggregates (e.g. minute, super, and monthly) once a location has meters attached.",
+  "sections": [
+    {
+      "heading": "Viewing Rolled-Up Data for a Location",
+      "body": "After a location has one or more meters attached, the Roll Up Viewer shows how that location's data rolls up - for example at a minute, super, and monthly level. For a liquid meter/location, the rollup view reflects the liquid-specific data captured for that location.",
+      "key_points": [
+        "The Roll Up Viewer aggregates a location's meter data at levels such as minute, super, and monthly.",
+        "Rollup output reflects the type of meter (e.g. liquid) attached to the location."
+      ]
+    }
+  ],
+  "tags": ["rollup-viewers", "locations", "aggregation"],
+  "sources": [
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+  ],
+  "relationships": [
+    { "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "type": "related-to", "target": "ko-locations-and-systems" },
+    { "type": "related-to", "target": "ko-tickets-overview" }
+  ],
+  "faqs": [
+    {
+      "question": "What does the Roll Up Viewer show for a FLOWCAL location?",
+      "options": [
+        "User group privilege levels",
+        "How the location's meter data aggregates, e.g. at minute, super, and monthly levels",
+        "PPA approval history",
+        "Manual import error logs"
+      ],
+      "correct_index": 1,
+      "explanation": "The Viewing Rolled-Up Data for a Location section states the Roll Up Viewer aggregates a location's data at levels such as minute, super, and monthly."
+    }
+  ],
+  "visual_story": {
+    "eligible": true,
+    "journey_order": 6,
+    "slide_hint": "teal-dark theme with a timeline showing minute -> super -> monthly rollup levels for a location"
+  },
+  "version": 3,
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21",
+  "published_pages": ["core-features/rollup-viewers.md", "visual/index.md", "practice/core-features-quiz.md"]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "run-20260921-flowcal-overview",
+  "agent": "knowledge-extraction",
+  "generated_at": "2026-09-21T00:00:00Z",
+  "source_transcript": "transcripts/pending/FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt",
+  "topics": [
+    { "heading": "Security: users and groups", "match_type": "new-category", "matched_ko_id": "ko-flowcal-data-journey-overview" },
+    { "heading": "End-to-end FLOWCAL data flow (meter to report)", "match_type": "new-category", "matched_ko_id": "ko-flowcal-data-journey-overview" },
+    { "heading": "What a meter is physically / FLOCON filter", "match_type": "new-category", "matched_ko_id": "ko-meter-fundamentals" },
+    { "heading": "Meter types (Coriolis/turbine) and pressure/temperature base", "match_type": "new-category", "matched_ko_id": "ko-meter-fundamentals" },
+    { "heading": "Creating a liquid meter (gas vs liquid)", "match_type": "new-category", "matched_ko_id": "ko-liquid-meter-product-setup" },
+    { "heading": "Product setup and density (Table E product)", "match_type": "new-category", "matched_ko_id": "ko-liquid-meter-product-setup" },
+    { "heading": "Meter factor and pressure/temperature base defaults", "match_type": "new-category", "matched_ko_id": "ko-liquid-meter-product-setup" },
+    { "heading": "Periodic vs batch data and contract hour/day", "match_type": "new-category", "matched_ko_id": "ko-liquid-meter-product-setup" },
+    { "heading": "Systems and the default enterprise system", "match_type": "new-category", "matched_ko_id": "ko-locations-and-systems" },
+    { "heading": "Adding meters to a location", "match_type": "new-category", "matched_ko_id": "ko-locations-and-systems" },
+    { "heading": "What a ticket is vs a meter", "match_type": "new-category", "matched_ko_id": "ko-tickets-overview" },
+    { "heading": "Creating a new ticket", "match_type": "new-category", "matched_ko_id": "ko-tickets-overview" },
+    { "heading": "Roll Up Viewer for a location", "match_type": "new-category", "matched_ko_id": "ko-rollup-viewer-basics" }
+  ],
+  "knowledge_objects": [
+    "ko-flowcal-data-journey-overview",
+    "ko-meter-fundamentals",
+    "ko-liquid-meter-product-setup",
+    "ko-locations-and-systems",
+    "ko-tickets-overview",
+    "ko-rollup-viewer-basics"
+  ],
+  "unmatched_topics": [
+    "Exceptions, meter closing, PPA approval, manual imports, and reporting were only mentioned as roadmap items in the intro narration and were not demoed in this transcript in enough depth to draft dedicated Knowledge Objects - captured only as key points on ko-flowcal-data-journey-overview. A future transcript covering these areas in depth should create/extend KOs for categories: Exceptions, Close Data, PPA, Imports, Reports."
+  ]
+}

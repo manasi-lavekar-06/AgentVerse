@@ -1,0 +1,52 @@
+{
+  "run_id": "run-20260921-flowcal-overview",
+  "agent": "visualization",
+  "generated_at": "2026-09-21T00:00:00Z",
+  "knowledge_objects": [
+    "ko-flowcal-data-journey-overview",
+    "ko-meter-fundamentals",
+    "ko-liquid-meter-product-setup",
+    "ko-locations-and-systems",
+    "ko-tickets-overview",
+    "ko-rollup-viewer-basics"
+  ],
+  "target_file": "docs/visual/index.md",
+  "slides": [
+    {
+      "ko_id": "ko-flowcal-data-journey-overview",
+      "slug": "intro",
+      "order": 1,
+      "markup": "<div class=\"vs-slide vs-slide--intro\">\n  <div class=\"vs-bg\"></div>\n  <div class=\"vs-intro-particles\">\n    <span class=\"vs-particle\"></span><span class=\"vs-particle\"></span><span class=\"vs-particle\"></span><span class=\"vs-particle\"></span><span class=\"vs-particle\"></span>\n    <span class=\"vs-particle\"></span><span class=\"vs-particle\"></span><span class=\"vs-particle\"></span><span class=\"vs-particle\"></span><span class=\"vs-particle\"></span>\n  </div>\n  <div class=\"vs-content\">\n    <div class=\"vs-slide-tag\">Step 1 · Overview</div>\n    <h2 class=\"vs-title\">The FLOWCAL Data Journey</h2>\n    <p class=\"vs-body\">From securing access with users and groups, to creating a liquid meter and its location, through validation, exceptions, PPA approval, imports, and rollups into reports — this is the path data takes through FLOWCAL.</p>\n  </div>\n</div>"
+    },
+    {
+      "ko_id": "ko-meter-fundamentals",
+      "slug": "meter-fundamentals",
+      "order": 2,
+      "markup": "<div class=\"vs-slide vs-slide--navy-dark\">\n  <div class=\"vs-bg\"></div>\n  <div class=\"vs-meter-types-grid\">\n    <div class=\"vs-type-card\"><div class=\"vs-type-icon\">⚙️</div><div class=\"vs-type-label\">Coriolis</div></div>\n    <div class=\"vs-type-card\"><div class=\"vs-type-icon\">🌀</div><div class=\"vs-type-label\">Turbine</div></div>\n    <div class=\"vs-type-card\"><div class=\"vs-type-icon\">🔧</div><div class=\"vs-type-label\">FLOCON Filter</div></div>\n  </div>\n  <div class=\"vs-content\">\n    <div class=\"vs-slide-tag\">Step 2 · Meters</div>\n    <h2 class=\"vs-title\">Meter Fundamentals</h2>\n    <p class=\"vs-body\">A meter is the physical device that measures product volume. A FLOCON filter captures its raw data, and characteristics like meter type, pressure base, and temperature base determine how that raw data becomes flow.</p>\n  </div>\n</div>"
+    },
+    {
+      "ko_id": "ko-liquid-meter-product-setup",
+      "slug": "product-setup",
+      "order": 3,
+      "markup": "<div class=\"vs-slide vs-slide--amber-dark\">\n  <div class=\"vs-bg\"></div>\n  <div class=\"vs-field-list\">\n    <span class=\"vs-field-chip vs-field-chip--key\">product</span>\n    <span class=\"vs-field-chip\">density</span>\n    <span class=\"vs-field-chip vs-field-chip--highlight\">pressure base</span>\n    <span class=\"vs-field-chip vs-field-chip--highlight\">temperature base</span>\n    <span class=\"vs-field-chip\">meter factor = 1</span>\n    <span class=\"vs-field-chip\">contract hour/day</span>\n  </div>\n  <div class=\"vs-content\">\n    <div class=\"vs-slide-tag\">Step 3 · Volume Editor</div>\n    <h2 class=\"vs-title\">Liquid Meter &amp; Product Setup</h2>\n    <p class=\"vs-body\">Choosing a product (e.g. a Table E product) auto-fills the meter's pressure base and temperature base, meter factor defaults to one, and the contract hour/day setting controls whether data is entered periodically or in batches.</p>\n  </div>\n</div>"
+    },
+    {
+      "ko_id": "ko-locations-and-systems",
+      "slug": "locations",
+      "order": 4,
+      "markup": "<div class=\"vs-slide vs-slide--hierarchy\">\n  <div class=\"vs-bg\"></div>\n  <div class=\"vs-hierarchy-tree\">\n    <div class=\"vs-hier-row\"><div class=\"vs-hier-node vs-hier-node--facility\">Enterprise (System)</div></div>\n    <div class=\"vs-hier-arrow\">↓</div>\n    <div class=\"vs-hier-row\"><div class=\"vs-hier-node vs-hier-node--station\">Location</div></div>\n    <div class=\"vs-hier-arrow\">↓</div>\n    <div class=\"vs-hier-row vs-hier-siblings\">\n      <div class=\"vs-hier-node vs-hier-node--meter\">Meter A</div>\n      <div class=\"vs-hier-node vs-hier-node--meter\">Meter B</div>\n    </div>\n  </div>\n  <div class=\"vs-content\">\n    <div class=\"vs-slide-tag\">Step 4 · Locations</div>\n    <h2 class=\"vs-title\">Locations &amp; Systems</h2>\n    <p class=\"vs-body\">FLOWCAL's default system is called enterprise, and customers can add other systems as needed. Within a system, a single location can have multiple meters attached to it.</p>\n  </div>\n</div>"
+    },
+    {
+      "ko_id": "ko-tickets-overview",
+      "slug": "tickets",
+      "order": 5,
+      "markup": "<div class=\"vs-slide vs-slide--data-dark\">\n  <div class=\"vs-bg\"></div>\n  <div class=\"vs-grid-mock\">\n    <div class=\"vs-grid-header\"><div class=\"vs-grid-cell\">Time</div><div class=\"vs-grid-cell\">Product</div><div class=\"vs-grid-cell\">Temp</div><div class=\"vs-grid-cell\">Volume</div><div class=\"vs-grid-cell\">Type</div></div>\n    <div class=\"vs-grid-row\"><div class=\"vs-grid-cell\">Hr 1</div><div class=\"vs-grid-cell\">-</div><div class=\"vs-grid-cell\">-</div><div class=\"vs-grid-cell\">-</div><div class=\"vs-grid-cell\">periodic</div></div>\n    <div class=\"vs-grid-row vs-row--estimated\"><div class=\"vs-grid-cell\">1 pt</div><div class=\"vs-grid-cell\">manual</div><div class=\"vs-grid-cell\">manual</div><div class=\"vs-grid-cell\">manual</div><div class=\"vs-grid-cell\">ticket</div></div>\n  </div>\n  <div class=\"vs-content\">\n    <div class=\"vs-slide-tag\">Step 5 · Tickets</div>\n    <h2 class=\"vs-title\">Tickets Overview</h2>\n    <p class=\"vs-body\">Unlike a meter's continuous hourly data, a ticket captures a single point in time — so its product, temperature, and similar fields are entered manually rather than drawn from a periodic record.</p>\n  </div>\n</div>"
+    },
+    {
+      "ko_id": "ko-rollup-viewer-basics",
+      "slug": "rollup",
+      "order": 6,
+      "markup": "<div class=\"vs-slide vs-slide--teal-dark\">\n  <div class=\"vs-bg\"></div>\n  <div class=\"vs-timeline\">\n    <div class=\"vs-timeline-track\">\n      <div class=\"vs-timeline-fill\"></div>\n      <div class=\"vs-timeline-marker\"></div>\n      <div class=\"vs-timeline-marker\"></div>\n      <div class=\"vs-timeline-marker\"></div>\n    </div>\n    <span class=\"vs-timeline-label\">Minute</span>\n    <span class=\"vs-timeline-label\">Super</span>\n    <span class=\"vs-timeline-label\">Monthly</span>\n  </div>\n  <div class=\"vs-content\">\n    <div class=\"vs-slide-tag\">Step 6 · Rollup Viewers</div>\n    <h2 class=\"vs-title\">Rollup Viewer Basics</h2>\n    <p class=\"vs-body\">Once a location has meters attached, the Roll Up Viewer shows how its data aggregates — from minute-level detail up through super and monthly totals.</p>\n  </div>\n</div>"
+    }
+  ]
+}

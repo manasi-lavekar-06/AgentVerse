@@ -1,0 +1,43 @@
+{
+  "run_id": "run-20260921-flowcal-overview",
+  "agent": "knowledge-enrichment",
+  "generated_at": "2026-09-21T00:00:00Z",
+  "input_knowledge_objects": [
+    "ko-flowcal-data-journey-overview",
+    "ko-meter-fundamentals",
+    "ko-liquid-meter-product-setup",
+    "ko-locations-and-systems",
+    "ko-tickets-overview",
+    "ko-rollup-viewer-basics"
+  ],
+  "enriched_knowledge_objects": [
+    "ko-flowcal-data-journey-overview",
+    "ko-meter-fundamentals",
+    "ko-liquid-meter-product-setup",
+    "ko-locations-and-systems",
+    "ko-tickets-overview",
+    "ko-rollup-viewer-basics"
+  ],
+  "faqs_added": 13,
+  "relationships_added": [
+    { "source": "ko-flowcal-data-journey-overview", "type": "related-to", "target": "ko-meter-fundamentals" },
+    { "source": "ko-flowcal-data-journey-overview", "type": "related-to", "target": "ko-liquid-meter-product-setup" },
+    { "source": "ko-flowcal-data-journey-overview", "type": "related-to", "target": "ko-locations-and-systems" },
+    { "source": "ko-flowcal-data-journey-overview", "type": "related-to", "target": "ko-tickets-overview" },
+    { "source": "ko-flowcal-data-journey-overview", "type": "related-to", "target": "ko-rollup-viewer-basics" },
+    { "source": "ko-meter-fundamentals", "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "source": "ko-meter-fundamentals", "type": "prerequisite-of", "target": "ko-liquid-meter-product-setup" },
+    { "source": "ko-liquid-meter-product-setup", "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "source": "ko-liquid-meter-product-setup", "type": "related-to", "target": "ko-meter-fundamentals" },
+    { "source": "ko-liquid-meter-product-setup", "type": "prerequisite-of", "target": "ko-locations-and-systems" },
+    { "source": "ko-locations-and-systems", "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "source": "ko-locations-and-systems", "type": "related-to", "target": "ko-liquid-meter-product-setup" },
+    { "source": "ko-locations-and-systems", "type": "prerequisite-of", "target": "ko-tickets-overview" },
+    { "source": "ko-locations-and-systems", "type": "prerequisite-of", "target": "ko-rollup-viewer-basics" },
+    { "source": "ko-tickets-overview", "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "source": "ko-tickets-overview", "type": "related-to", "target": "ko-locations-and-systems" },
+    { "source": "ko-rollup-viewer-basics", "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "source": "ko-rollup-viewer-basics", "type": "related-to", "target": "ko-locations-and-systems" },
+    { "source": "ko-rollup-viewer-basics", "type": "related-to", "target": "ko-tickets-overview" }
+  ]
+}

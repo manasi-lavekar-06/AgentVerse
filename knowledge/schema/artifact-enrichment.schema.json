@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "flowcal-knowledge-hub/artifact-enrichment.schema.json",
+  "title": "Knowledge Enrichment Artifact",
+  "description": "Output of the Knowledge Enrichment Agent. Handed to the Visualization Agent and Publishing Agent.",
+  "type": "object",
+  "required": ["run_id", "agent", "generated_at", "input_knowledge_objects", "enriched_knowledge_objects"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "agent": { "const": "knowledge-enrichment" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "input_knowledge_objects": { "type": "array", "items": { "type": "string" } },
+    "enriched_knowledge_objects": { "type": "array", "items": { "type": "string" } },
+    "faqs_added": { "type": "integer", "minimum": 0 },
+    "relationships_added": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": { "type": "string" },
+          "type": { "type": "string", "enum": ["related-to", "prerequisite-of", "part-of", "extends"] },
+          "target": { "type": "string" }
+        }
+      }
+    }
+  }
+}

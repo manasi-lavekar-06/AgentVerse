@@ -1,0 +1,85 @@
+{
+  "id": "ko-flowcal-data-journey-overview",
+  "slug": "flowcal-data-journey-overview",
+  "title": "FLOWCAL Data Journey Overview",
+  "category": "getting-started/flowcal-data-journey.md",
+  "status": "published",
+  "summary": "A high-level walkthrough of how a new user moves through FLOWCAL end to end: security setup (users and groups), creating a liquid product/meter, building out locations and tickets, validating incoming meter data, resolving exceptions, closing meters, routing changes through PPA approval, manually importing data, and rolling up results into reports.",
+  "sections": [
+    {
+      "heading": "Security: Users and Groups",
+      "body": "Access to FLOWCAL is controlled through users and groups. Administrators create groups, each with a different privilege level, and then assign individual users to the group that matches the access they need.",
+      "key_points": [
+        "Users are created individually and then assigned to one or more groups.",
+        "Groups are created with distinct privilege levels to control what a user can access or do in FLOWCAL."
+      ]
+    },
+    {
+      "heading": "End-to-End Data Flow",
+      "body": "After security is configured, the basic FLOWCAL workflow is: create a liquid product and meter (with a base pressure and base temperature), create the meter's location and tickets, assign characteristics to the meter, receive meter data, and validate whether the incoming data is good. Data that fails validation closes on an exception, which must be resolved. Once data looks good, the meter is closed for the period; any later change to a closed meter (such as an equation change) requires approval through the PPA (post-processing approval) workflow. Data can also be brought in through manual imports, after which results are rolled up and viewed in reports.",
+      "key_points": [
+        "Liquid product/meter setup requires a base pressure and base temperature.",
+        "Core setup order: meter -> location -> tickets -> characteristics -> meter data -> validation.",
+        "Data that fails validation closes on an exception and must be resolved before the meter can be closed.",
+        "Changes to an already-closed meter (e.g. an equation change) require PPA approval.",
+        "Manual imports bring data into FLOWCAL outside of automated collection.",
+        "Rolled-up data is the basis for FLOWCAL reports."
+      ]
+    }
+  ],
+  "tags": ["overview", "security", "users", "groups", "ppa", "exceptions", "rollup", "reports", "getting-started", "data-journey"],
+  "sources": [
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+  ],
+  "relationships": [
+    { "type": "related-to", "target": "ko-meter-fundamentals" },
+    { "type": "related-to", "target": "ko-liquid-meter-product-setup" },
+    { "type": "related-to", "target": "ko-locations-and-systems" },
+    { "type": "related-to", "target": "ko-tickets-overview" },
+    { "type": "related-to", "target": "ko-rollup-viewer-basics" }
+  ],
+  "faqs": [
+    {
+      "question": "How is access to FLOWCAL controlled?",
+      "options": [
+        "Every user shares a single admin account",
+        "Users are assigned to groups that carry distinct privilege levels",
+        "Access is granted purely by IP-address allowlisting",
+        "Access is controlled per-ticket rather than per-user"
+      ],
+      "correct_index": 1,
+      "explanation": "Per the Security: Users and Groups section, FLOWCAL creates groups with different privilege levels and assigns users to the group matching the access they need."
+    },
+    {
+      "question": "What happens when incoming meter data fails validation in FLOWCAL?",
+      "options": [
+        "It is silently discarded",
+        "It closes on an exception that must be resolved",
+        "It is automatically approved through PPA",
+        "It is rolled up as-is into reports"
+      ],
+      "correct_index": 1,
+      "explanation": "The End-to-End Data Flow section states that data failing validation closes on an exception, which must be resolved before the meter can be closed."
+    },
+    {
+      "question": "What is required to make a change (e.g. an equation change) to an already-closed meter?",
+      "options": [
+        "No approval is needed since the meter is already closed",
+        "The change must go through PPA approval",
+        "The meter must be deleted and recreated",
+        "A new group must be created for the change"
+      ],
+      "correct_index": 1,
+      "explanation": "Per the End-to-End Data Flow section, changes to a closed meter require approval through the PPA workflow."
+    }
+  ],
+  "visual_story": {
+    "eligible": true,
+    "journey_order": 1,
+    "slide_hint": "intro slide with floating data-particle background introducing the FLOWCAL data journey"
+  },
+  "version": 3,
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21",
+  "published_pages": ["getting-started/flowcal-data-journey.md", "visual/index.md", "practice/getting-started-quiz.md"]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "ko-liquid-meter-product-setup",
+  "slug": "liquid-meter-product-setup",
+  "title": "Liquid Meter and Product Setup",
+  "category": "core-features/volume-editor.md",
+  "status": "published",
+  "summary": "Walks through creating a liquid meter and its product in FLOWCAL, how product density and units feed the meter, how meter factor and pressure/temperature base default from the product, and the difference between periodic (e.g. hourly) and batch data entry, including the contract hour/day setting.",
+  "sections": [
+    {
+      "heading": "Creating a Liquid Meter",
+      "body": "A meter is created either from a shortcut or by going to Setup > Create Meter, where the type is chosen as either a gas meter or a liquid meter. Once the meter is created, its characteristics are set up, after which the Volume Editor can be used to see how flow data is calculated.",
+      "key_points": [
+        "Meters can be created via a shortcut or through Setup > Create Meter.",
+        "At creation, a meter is chosen as either a gas meter or a liquid meter.",
+        "After characteristics are set up, the Volume Editor shows how flow data calculates for that meter."
+      ]
+    },
+    {
+      "heading": "Product Setup and Density",
+      "body": "Creating a liquid meter requires selecting or creating its product. A common choice is a Table E product, which prompts for a density value - density does not need to be filled in if not required, but the unit for the product must still be selected.",
+      "key_points": [
+        "A liquid meter is tied to a product (e.g. a Table E product).",
+        "Table E products prompt for density, though a value is not always required.",
+        "The product's unit selection is still required."
+      ]
+    },
+    {
+      "heading": "Meter Factor and Pressure/Temperature Base",
+      "body": "Once a product is selected for the meter, FLOWCAL pulls the pressure base and temperature base from the product automatically; any remaining fields must be filled in manually. Meter factor is usually left at its default value of one.",
+      "key_points": [
+        "Pressure base and temperature base default from the selected product.",
+        "Meter factor defaults to one in typical setups."
+      ]
+    },
+    {
+      "heading": "Periodic vs Batch Data and Contract Hour",
+      "body": "Data entry can be periodic (e.g. hourly, where the grid shows one row per hour) or batch, where liquid data arrives less frequently, such as every two or fifteen days, rather than on a fixed period. A related setting is the contract hour and day, which defines the start of the operating day (for example, starting at 9 o'clock on the first day of the month) - this selection determines how the data grid is displayed.",
+      "key_points": [
+        "Periodic (e.g. hourly) entry shows one grid row per period.",
+        "Batch data arrives at irregular intervals (e.g. every two or fifteen days) rather than on a fixed period.",
+        "Contract hour and day define when the operating day/month starts and control how the data grid displays."
+      ]
+    }
+  ],
+  "tags": ["volume-editor", "liquid-meter", "product-setup", "density", "meter-factor", "periodic", "batch", "contract-hour"],
+  "sources": [
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+  ],
+  "relationships": [
+    { "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
+    { "type": "related-to", "target": "ko-meter-fundamentals" },
+    { "type": "prerequisite-of", "target": "ko-locations-and-systems" }
+  ],
+  "faqs": [
+    {
+      "question": "When creating a meter, what two meter types can be chosen at creation?",
+      "options": [
+        "Coriolis meter or turbine meter",
+        "Gas meter or liquid meter",
+        "Batch meter or periodic meter",
+        "Enterprise meter or local meter"
+      ],
+      "correct_index": 1,
+      "explanation": "The Creating a Liquid Meter section states that at creation a meter is chosen as either a gas meter or a liquid meter."
+    },
+    {
+      "question": "Where do a liquid meter's pressure base and temperature base values typically come from?",
+      "options": [
+        "They must always be entered manually",
+        "They default from the product selected for the meter",
+        "They come from the ticket",
+        "They come from the assigned group's privilege level"
+      ],
+      "correct_index": 1,
+      "explanation": "The Meter Factor and Pressure/Temperature Base section states these values are pulled from the selected product automatically."
+    },
+    {
+      "question": "What distinguishes batch data entry from periodic (e.g. hourly) data entry?",
+      "options": [
+        "Batch data arrives at irregular intervals rather than a fixed period",
+        "Batch data only applies to gas meters",
+        "Periodic data cannot be hourly",
+        "Batch data requires PPA approval before entry"
+      ],
+      "correct_index": 0,
+      "explanation": "The Periodic vs Batch Data and Contract Hour section explains batch data arrives irregularly (e.g. every two or fifteen days) rather than on a fixed period."
+    }
+  ],
+  "visual_story": {
+    "eligible": true,
+    "journey_order": 3,
+    "slide_hint": "amber-dark theme with a Volume Editor grid mockup and field chips for density, meter factor, pressure/temperature base"
+  },
+  "version": 3,
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21",
+  "published_pages": ["core-features/volume-editor.md", "visual/index.md", "practice/core-features-quiz.md"]
+}

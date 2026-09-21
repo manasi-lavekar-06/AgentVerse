@@ -1,0 +1,12 @@
+mkdocs
+mkdocs-material
+PyMuPDF
+python-docx
+srt
+webvtt-py
+easyocr
+Pillow
+requests
+openai-whisper
+imageio-ffmpeg
+soundfile

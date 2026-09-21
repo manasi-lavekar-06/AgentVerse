@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "flowcal-knowledge-hub/artifact-publishing.schema.json",
+  "title": "Publishing Artifact",
+  "description": "Output of the Publishing Agent. Final summary of a pipeline run, consumed by the Orchestrator Agent and Search Agent.",
+  "type": "object",
+  "required": ["run_id", "agent", "generated_at", "pages_created", "pages_updated"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "agent": { "const": "publishing" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "pages_created": { "type": "array", "items": { "type": "string" } },
+    "pages_updated": { "type": "array", "items": { "type": "string" } },
+    "quiz_pages_updated": { "type": "array", "items": { "type": "string" } },
+    "visual_story_updated": { "type": "boolean" },
+    "nav_entries_added": { "type": "array", "items": { "type": "string" } },
+    "registry_updated": { "type": "boolean" },
+    "transcript_moved_to": { "type": ["string", "null"] }
+  }
+}

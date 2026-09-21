@@ -1,5 +1,9 @@
 # AgentVerse
 
+## Install Python dependencies
+python -m venv .venv
+.\\.venv\Scripts\pip install -r "path_to_requirements_file"
+
 ## Transcribe (base model is fast; use --model small for better accuracy)
 .\\.venv\Scripts\python pipeline/transcribe.py "downloaded_video_path"
 

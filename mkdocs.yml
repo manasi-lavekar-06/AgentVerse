@@ -89,13 +89,11 @@ nav:
       - FLOWCAL Data Journey: getting-started/flowcal-data-journey.md
   - Core Features:
       - Meters: core-features/meters.md
+      - Meter Editor: core-features/meter-editor.md
       - Volume Editor: core-features/volume-editor.md
       - Locations: core-features/locations.md
       - Tickets: core-features/tickets.md
       - Rollup Viewers: core-features/rollup-viewers.md
-  - Practice:
-      - Getting Started Quiz: practice/getting-started-quiz.md
-      - Core Features Quiz: practice/core-features-quiz.md
   - Visual Story: visual/index.md
 
 extra:
@@ -110,3 +108,8 @@ extra_css:
 
 extra_javascript:
   - javascripts/visual.js
+  - javascripts/flowchart.js
+  - javascripts/diagram.js
+  - javascripts/slideshow.js
+  - javascripts/quiz.js
+  - javascripts/flashcards.js

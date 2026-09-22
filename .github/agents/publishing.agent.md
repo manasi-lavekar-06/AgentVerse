@@ -10,12 +10,18 @@ this system reads and writes only inside `knowledge/`. This single-writer rule e
 the rendered site never drifts out of sync with the Knowledge Objects that back it.
 
 Use the [Knowledge Object Skill](../skills/knowledge-object-skill/SKILL.md) for the
-KO schema and status rules you must respect and update.
+KO schema and status rules you must respect and update, and the
+[Content Rendering Skill](../skills/content-rendering-skill/SKILL.md) for how to render
+each section — dispatch on its `render_hint` field (text/image/flowchart/diagram/
+slideshow) rather than always rendering the same layout.
 
 ## Constraints
 
 - DO NOT hand-author content that isn't backed by a Knowledge Object's `sections[]`,
   `faqs[]`, or a Visualization Agent slide — every published fact must trace back to a KO.
+- DO NOT render every section identically — render each per its `render_hint` per the
+  Content Rendering Skill; every core content page must stay small and glanceable, not
+  a wall of text, but should also never force content into an unsuitable shape.
 - DO NOT restructure existing `mkdocs.yml` nav tabs — only append new page entries under
   the correct existing tab, or add a new tab if a KO's `category` genuinely introduces one.
 - DO NOT overwrite unrelated content already on a page — apply the same
@@ -29,9 +35,11 @@ KO schema and status rules you must respect and update.
 ## Approach
 
 1. For each `enriched` Knowledge Object in the enrichment artifact:
-   a. Render its `sections[]` into Markdown (heading + body + key-point bullets) and
-      merge into `docs/<category>` — create the page if it doesn't exist, otherwise apply
-      merge rules against existing content.
+   a. Render each of its `sections[]` per its `render_hint` (`text` as plain prose,
+      `image` as a figure/placeholder, `flowchart` as ordered steps, `diagram` as a
+      hub-and-spoke relationship diagram, `slideshow` as a small carousel) per the
+      Content Rendering Skill. Merge into `docs/<category>` — create the page if it
+      doesn't exist, otherwise apply the skill's merge rules against existing blocks.
    b. If `mkdocs.yml` has no nav entry for this page, append one under the matching
       existing tab (or create a new tab only if no existing tab fits).
    c. Render `faqs[]` into the matching `docs/practice/<category>-quiz.md` quiz deck,

@@ -1251,3 +1251,281 @@
   .vs-meter-types-grid { grid-template-columns: repeat(2, 1fr); }
   .vs-hier-node { padding: 0.4rem 0.7rem; font-size: 0.75rem; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   TEXT (render_hint: "text") — plain prose, the default/fallback for
+   general descriptive or definitional content. No JS involved.
+════════════════════════════════════════════════════════════ */
+.txt-block {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid var(--fc-border);
+  background: var(--fc-surface);
+  border-radius: 0 8px 8px 0;
+}
+.txt-block p:first-child { margin-top: 0; }
+.txt-block p:last-child { margin-bottom: 0; }
+[data-md-color-scheme="slate"] .txt-block {
+  background: rgba(255,255,255,0.03);
+  border-left-color: rgba(255,255,255,0.16);
+}
+
+/* ════════════════════════════════════════════════════════════
+   IMAGE (render_hint: "image") — an actual screenshot/photo/diagram
+   image with a caption. No JS involved; falls back to a labeled
+   placeholder card when no image asset is available yet.
+════════════════════════════════════════════════════════════ */
+.img-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.img-figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--fc-border);
+  box-shadow: 0 4px 14px rgba(13, 27, 42, 0.12);
+}
+.img-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--fc-dark);
+  opacity: 0.8;
+}
+
+.img-placeholder {
+  margin: 1.5rem 0;
+  padding: 2rem 1.25rem;
+  border: 2px dashed var(--fc-border);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--fc-dark);
+  background: var(--fc-surface);
+}
+.img-placeholder .img-placeholder-icon { font-size: 1.8rem; display: block; margin-bottom: 0.5rem; }
+.img-placeholder .img-placeholder-caption { font-size: 0.85rem; opacity: 0.85; }
+[data-md-color-scheme="slate"] .img-placeholder {
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.16);
+}
+
+/* ════════════════════════════════════════════════════════════
+   FLOWCHART (render_hint: "flowchart") — ordered steps rendered as
+   connected rectangular nodes with arrows, driven by javascripts/flowchart.js.
+════════════════════════════════════════════════════════════ */
+.flow-steps-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.flow-title, .dg-title, .sl-title {
+  font-weight: 700;
+  color: var(--fc-navy);
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+[data-md-color-scheme="slate"] .flow-title,
+[data-md-color-scheme="slate"] .dg-title,
+[data-md-color-scheme="slate"] .sl-title { color: #fff; }
+
+.flow-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.4rem;
+}
+
+.flow-node {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 2px solid transparent;
+  background: var(--fc-surface);
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  max-width: 220px;
+  opacity: 0;
+  animation: vs-rise 0.5s ease forwards;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.flow-node:hover { box-shadow: 0 3px 10px rgba(13, 27, 42, 0.18); transform: translateY(-2px); }
+
+.flow-index {
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: vs-pop 0.4s ease backwards;
+}
+
+.flow-label {
+  font-size: 0.82rem;
+  color: var(--fc-dark);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.flow-node.flow-expanded .flow-label { -webkit-line-clamp: unset; overflow: visible; }
+[data-md-color-scheme="slate"] .flow-label { color: #e3e7f0; }
+
+.flow-arrow {
+  align-self: center;
+  color: var(--fc-border);
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: vs-fade 0.4s ease forwards;
+}
+[data-md-color-scheme="slate"] .flow-arrow { color: rgba(255,255,255,0.3); }
+
+@media (max-width: 600px) {
+  .flow-track { flex-direction: column; align-items: stretch; }
+  .flow-arrow { transform: rotate(90deg); align-self: flex-start; margin-left: 0.7rem; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   DIAGRAM (render_hint: "diagram") — top-down hub-and-spoke, for
+   relationships/comparisons/structural breakdowns, driven by
+   javascripts/diagram.js. Deliberately NOT radial (that was the
+   mind map's look, which this replaces).
+════════════════════════════════════════════════════════════ */
+.dg-items-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.dg-rendered {
+  position: relative;
+  padding: 0.5rem 0 0;
+}
+
+.dg-hub {
+  display: inline-block;
+  margin: 0 auto 1.75rem;
+  padding: 0.6rem 1.1rem;
+  background: linear-gradient(135deg, var(--fc-navy) 0%, var(--fc-navy-dark) 100%);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(26, 39, 66, 0.35);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dg-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.dg-link {
+  fill: none;
+  stroke: var(--fc-border);
+  stroke-width: 2;
+  opacity: 0.8;
+}
+[data-md-color-scheme="slate"] .dg-link { stroke: rgba(255,255,255,0.25); }
+
+.dg-spokes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.dg-node {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.6rem 0.95rem;
+  max-width: 220px;
+  font-size: 0.85rem;
+  color: var(--fc-dark);
+  line-height: 1.35;
+  opacity: 0;
+  animation: vs-scale-in 0.4s ease forwards;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dg-node:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(13, 27, 42, 0.18); }
+[data-md-color-scheme="slate"] .dg-node { color: #1a2233; }
+
+/* ════════════════════════════════════════════════════════════
+   SLIDESHOW (render_hint: "slideshow") — a small carousel, one point
+   at a time, driven by javascripts/slideshow.js.
+════════════════════════════════════════════════════════════ */
+.sl-slides-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.sl-rendered {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.1rem;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: 12px;
+}
+[data-md-color-scheme="slate"] .sl-rendered {
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.sl-viewport {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sl-text {
+  flex: 1;
+  margin: 0;
+  min-height: 2.6rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--fc-dark);
+  animation: vs-fade 0.35s ease;
+}
+[data-md-color-scheme="slate"] .sl-text { color: #e3e7f0; }
+
+.sl-nav {
+  flex: none;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 1px solid var(--fc-border);
+  background: #fff;
+  color: var(--fc-navy);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.sl-nav:hover { background: var(--fc-surface); }
+[data-md-color-scheme="slate"] .sl-nav {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.16);
+  color: #fff;
+}
+
+.sl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.sl-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--fc-border);
+  cursor: pointer;
+  padding: 0;
+}
+.sl-dot-active { background: var(--fc-amber); }
+

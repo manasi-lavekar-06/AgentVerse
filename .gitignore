@@ -31,6 +31,7 @@ MANIFEST
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+!packaging/*.spec
 
 # Installer logs
 pip-log.txt
@@ -156,6 +157,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# RAG pathway local vector store (rebuildable from knowledge/objects/)
+rag/.chroma_store/
+
+# Standalone app: uploaded help docs (categorize step), never committed
+rag/.uploads/
 
 # Spyder project settings
 .spyderproject

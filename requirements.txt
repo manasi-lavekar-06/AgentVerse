@@ -10,3 +10,14 @@ requests
 openai-whisper
 imageio-ffmpeg
 soundfile
+
+# rag/ pipeline
+openai
+chromadb
+tiktoken
+python-dotenv
+jsonschema
+flask
+
+# Packaging the standalone app (rag/app.py) into an exe
+pyinstaller

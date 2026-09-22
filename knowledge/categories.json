@@ -1,0 +1,52 @@
+{
+  "product": "FLOWCAL",
+  "source_help_doc": "seeded from existing mkdocs.yml nav (pre-dates the categorize.py setup step)",
+  "generated_at": "2026-09-22T00:00:00+00:00",
+  "tabs": [
+    {
+      "name": "Getting Started",
+      "pages": [
+        {
+          "path": "getting-started/flowcal-data-journey.md",
+          "label": "FLOWCAL Data Journey",
+          "description": "End-to-end overview of how data flows through FLOWCAL, from field meters to reporting."
+        }
+      ]
+    },
+    {
+      "name": "Core Features",
+      "pages": [
+        {
+          "path": "core-features/meters.md",
+          "label": "Meters",
+          "description": "What a meter is physically, meter types, and the characteristics that drive flow calculation."
+        },
+        {
+          "path": "core-features/meter-editor.md",
+          "label": "Meter Editor",
+          "description": "The Meter Editor UI: tabs, fields, validation tools, and data handling options."
+        },
+        {
+          "path": "core-features/volume-editor.md",
+          "label": "Volume Editor",
+          "description": "Liquid meter and product setup, volume calculations and edits."
+        },
+        {
+          "path": "core-features/locations.md",
+          "label": "Locations",
+          "description": "Locations and systems: how meters are grouped and organized."
+        },
+        {
+          "path": "core-features/tickets.md",
+          "label": "Tickets",
+          "description": "Tickets overview: what tickets represent and how they're used."
+        },
+        {
+          "path": "core-features/rollup-viewers.md",
+          "label": "Rollup Viewers",
+          "description": "Rollup viewer basics for aggregating data across meters/locations."
+        }
+      ]
+    }
+  ]
+}

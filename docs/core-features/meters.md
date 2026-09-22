@@ -5,35 +5,59 @@ tags:
 
 # Meter Fundamentals
 
-Explains what a meter represents physically in FLOWCAL, how a FLOCON filter attaches to
-it to capture raw data, and how meter type and characteristics (such as base pressure
-and base temperature) affect how flow is calculated.
+This guide explains how to import meter and ticket data into the system, including the required file formats and steps for successful data integration.
 
-## What Is a Meter
+<!-- ko:ko-importing-meter-and-ticket-data block:0 -->
+<div class="txt-block" markdown="1">
 
-In FLOWCAL, everything originates from meter data. A meter is a physical device
-installed where product is pulled from the ground or transferred through a pipeline,
-and it measures volume - how much product is moving. A FLOCON filter is attached to the
-meter and captures the raw data based on the meter's pressure base at the time of
-measurement.
+### File Formats for Import
 
-- A meter is a physical device that measures product volume as it is pulled from the
-  ground or transferred through a pipeline.
-- A FLOCON filter attaches to the meter and captures raw measurement data.
+<p>To import meter or ticket data, specific file formats are required. For meter data, a sample text file format is provided, which can be copied into Excel for data entry. For ticket data, both TFX (binary) and text file formats are supported. Ensure the correct file type is selected during the import process.</p>
+<ul>
+<li>Meter data requires a specific text file format.</li>
+<li>Ticket data supports TFX (binary) and text file formats.</li>
+<li>Use Excel to prepare data in the required format.</li>
+</ul>
 
-## Meter Types and Characteristics
+</div>
 
-Different meter types - such as Coriolis or turbine - calculate flow differently, so
-each meter's characteristics must be defined. Two key characteristics are the pressure
-base and the temperature base: the temperature of the product, the meter's own
-temperature, and the pressure base together determine how raw data is converted into
-flow.
+<!-- ko:ko-importing-meter-and-ticket-data block:1 -->
+<div class="flow-chart">
+<div class="flow-root">Steps to Import Meter Data</div>
+<ol class="flow-steps">
+<li class="flow-step">Obtain the sample file format for meter data.</li>
+<li class="flow-step">Copy the format into Excel and enter the required data.</li>
+<li class="flow-step">Save the file in the appropriate format.</li>
+<li class="flow-step">Navigate to the meter import section in the system.</li>
+<li class="flow-step">Select the prepared file and initiate the import process.</li>
+</ol>
+</div>
 
-- Meter types include Coriolis and turbine, each with its own calculation method.
-- Pressure base and temperature base are core characteristics assigned to a meter.
-- Both product temperature and meter temperature feed into the flow calculation.
+<!-- ko:ko-importing-meter-and-ticket-data block:2 -->
+<div class="flow-chart">
+<div class="flow-root">Steps to Import Ticket Data</div>
+<ol class="flow-steps">
+<li class="flow-step">Navigate to the meter import section and select ticket data.</li>
+<li class="flow-step">Choose the file format (TFX or text file).</li>
+<li class="flow-step">Select the file to import.</li>
+<li class="flow-step">Verify the imported ticket in the ticket editor by selecting the appropriate date range and ticket type.</li>
+</ol>
+</div>
+
+<!-- ko:ko-importing-meter-and-ticket-data block:3 -->
+<div class="txt-block" markdown="1">
+
+### Summary of Import Process
+
+<p>The import process involves preparing data in the correct format, uploading it through the system's import functionality, and verifying the imported data. This ensures accurate integration of meter and ticket data into the system.</p>
+<ul>
+<li>Prepare data in the correct format.</li>
+<li>Use the system's import functionality.</li>
+<li>Verify imported data for accuracy.</li>
+</ul>
+
+</div>
 
 ## See Also
 
-- [FLOWCAL Data Journey Overview](../getting-started/flowcal-data-journey.md)
-- [Liquid Meter and Product Setup](volume-editor.md)
+- (none yet)

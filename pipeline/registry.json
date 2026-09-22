@@ -16,6 +16,68 @@
         "core-features/tickets.md",
         "core-features/rollup-viewers.md"
       ]
+    },
+    "video_5ymkizhyy4s_19_160_1280x720_transcript.txt": {
+      "processed_at": "2026-09-21",
+      "contributed_to": [
+        "core-features/toolbox.md"
+      ]
+    },
+    "Episode1_FullTranscript.txt": {
+      "processed_at": "2026-09-21",
+      "contributed_to": [
+        "getting-started/hydrocarbon-fundamentals.md",
+        "getting-started/well-extraction.md",
+        "getting-started/natural-gas-101.md",
+        "core-features/separation.md",
+        "core-features/gathering-systems.md",
+        "core-features/pipelines.md",
+        "core-features/meter-testing.md",
+        "core-features/distribution.md"
+      ]
+    },
+    "FLOWCAL 10 Online Help": {
+      "processed_at": "2026-09-22",
+      "contributed_to": [
+        "core-features/meters.md",
+        "core-features/locations.md",
+        "core-features/tickets.md",
+        "core-features/rollup-viewers.md",
+        "core-features/toolbox.md",
+        "core-features/volume-editor.md",
+        "core-features/admin-options.md",
+        "core-features/application-interface.md",
+        "core-features/auto-edits.md",
+        "core-features/blm.md",
+        "core-features/business-month-editor.md",
+        "core-features/calculated-meter-editor.md",
+        "core-features/close-data.md",
+        "core-features/comparison-locations.md",
+        "core-features/dashboard-manager.md",
+        "core-features/densitometer-editor.md",
+        "core-features/edit-approvals.md",
+        "core-features/flowcal10-getting-started.md",
+        "core-features/imports.md",
+        "core-features/liquid-cavern-editor.md",
+        "core-features/list-editor.md",
+        "core-features/messages.md",
+        "core-features/ppa.md",
+        "core-features/reports.md",
+        "core-features/sample-analyses.md",
+        "core-features/set-points.md",
+        "core-features/settings-manager.md",
+        "core-features/sources.md",
+        "core-features/tank-editor.md",
+        "core-features/glossary.md",
+        "core-features/brd.md",
+        "core-features/home-page-content.md"
+      ]
+    },
+    "video_66fo5e3lkqt_19_160_1220x686_transcript.txt": {
+      "processed_at": "2026-09-22",
+      "contributed_to": [
+        "core-features/external-volume-interface.md"
+      ]
     }
   },
   "categories": {
@@ -40,6 +102,36 @@
       ],
       "sources": [
         "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "getting-started/hydrocarbon-fundamentals.md": {
+      "topics_covered": [
+        "What Are Hydrocarbons",
+        "Natural Gas as a Hydrocarbon Mixture",
+        "Mixed Extraction from Underground"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "getting-started/well-extraction.md": {
+      "topics_covered": [
+        "Production Wells and Extraction Methods",
+        "Hydraulic Fracturing (Fracking) Process",
+        "Drilling Completion and Production"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "getting-started/natural-gas-101.md": {
+      "topics_covered": [
+        "The Complete Natural Gas Flow Process",
+        "Measurement Points in the Process",
+        "FLOWCAL's Role in the Measurement Process"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
       ]
     },
     "core-features/meters.md": {
@@ -86,6 +178,78 @@
       ],
       "sources": [
         "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+      ]
+    },
+    "core-features/toolbox.md": {
+      "topics_covered": [
+        "Accessing and Configuring the Toolbox",
+        "Toolbox Operations"
+      ],
+      "sources": [
+        "video_5ymkizhyy4s_19_160_1280x720_transcript.txt"
+      ]
+    },
+    "core-features/separation.md": {
+      "topics_covered": [
+        "Separation at the Well Site",
+        "Well Stream Factors and Measurement Accuracy",
+        "Multi-Stage Separation"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "core-features/gathering-systems.md": {
+      "topics_covered": [
+        "Purpose of Gathering Systems",
+        "Gathering Companies and Ownership",
+        "Gathering and Pipeline Quality Requirements"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "core-features/pipelines.md": {
+      "topics_covered": [
+        "Pipeline Quality Requirements",
+        "Compressor Stations and Pressure Management",
+        "Line Pack and Strategic Gas Storage",
+        "Compressor Fuel Consumption and Measurement"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "core-features/meter-testing.md": {
+      "topics_covered": [
+        "Meter Calibration and Inspection Requirements",
+        "The TestIt System for Quality Assurance",
+        "Data Quality and Measurement Integrity"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "core-features/distribution.md": {
+      "topics_covered": [
+        "Distribution Systems and Companies",
+        "Measurement at Distribution Points",
+        "End User Categories and Usage"
+      ],
+      "sources": [
+        "Episode1_FullTranscript.txt"
+      ]
+    },
+    "core-features/external-volume-interface.md": {
+      "topics_covered": [
+        "Introduction to External Volume Interface",
+        "Meter Editor Configuration",
+        "System Configuration and Administrator Settings",
+        "Accessing Settings Manager",
+        "Manual Data Entry Workflow"
+      ],
+      "sources": [
+        "video_66fo5e3lkqt_19_160_1220x686_transcript.txt"
       ]
     }
   }

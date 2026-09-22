@@ -1,0 +1,374 @@
+# <span id="aanchor439"></span> Message Directory
+
+[&lt;&lt; Back](../Message%20Directory.md) \| [0-99](Meter%20000.md) \| [100](Meter%20100.md) \| [200](Meter%20200.md) \| [300](Meter%20300.md) \| [400](Meter%20400.md) \| [500](Meter%20500.md) \| [600](Meter%20600.md) \| [700](Meter%20700.md) \| <a href="#" class="selected">800</a> \| [1000](Meter%201000.md) \| [1200](Meter%201200.md) \| [5500](Meter%205500.md)
+
+## Meter Messages
+
+### 801 - 863
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="801">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />801 – FMP Tier not calculated (database error occurred accessing meter)</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="801">
+
+This message is generated when FMP tier calculations are unsuccessful due to a database error.
+
+- Message Text: FMP Tier not calculated (database error occurred accessing meter)
+- Data 1 Usage: Oracle Error Number
+- Message Class: Information
+- Message Priority: 5
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="802">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />802 – FMP Tier not calculated (meter has no first flow date)</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="802">
+
+This message is generated when FMP tier calculations are attempted on a meter that does not have a first flow date assigned.
+
+- Message Text: FMP Tier not calculated (meter has no first flow date)
+- Message Class: Information
+- Message Priority: 5
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="803">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />803 – FMP Tier not calculated (meter has insufficient flow data)</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="803">
+
+This message is generated when FMP tier calculations are attempted on a meter with less than 12 full months of data.
+
+- Message Text: FMP Tier not calculated (meter has no flow data)
+- Message Class: Information
+- Message Priority: 5
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="804">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />804 – Unknown error in FMP Tier calculation</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="804">
+
+This message is generated when FMP tier calculations are unsuccessful for an unknown reason.
+
+- Message Text: Unknown error in FMP Tier calculation
+- Message Class: Information
+- Message Priority: 5
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="805">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />805 – FMP Tier updated by calculation</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="805">
+
+This message is generated when the FMP tier is updated to show the calculated FMP Tier.
+
+- Message Text: FMP Tier updated by calculation
+- Data 1 Usage: Old Tier
+- Data 2 Usage: New Tier
+- Message Class: Information
+- Message Priority: 5
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="853">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />853 – MCQ – Meter field successfully changed</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="853">
+
+This message indicates that the process successfully updated a meter field. This message is suppressed by default since it could cause excessive messages, Edit the priority to a non-zero value to enable logging.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Field Name</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The name of the field that was updated</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">Old Value</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The old value of the field</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">New Value</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The new value saved</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyB-Column-Standard1">Effective Date</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard1">The effective date of a characteristic change</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="854">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />854 - MCQ - Required field is missing</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="854">
+
+This message indicates that a field required to complete the import was not provided. The record will not have imported.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyB-Column-Standard2">Field Name</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard2">The name of the field that is missing a value</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="856">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />856 - MCQ - Field contains invalid value</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="856">
+
+The message indicates that a field contains a value unrecognized by FLOWCAL. The record will not have imported. Correct the data and resend the record.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Field Name</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The name of the field containing the invalid value</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyB-Column-Standard1">Field Value</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard1">The invalid value</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="857">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />857 - MCQ - Field contains out of range value</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="857">
+
+The message indicates that a field contains a value that is outside of the acceptable range. Correct the data and resend the record.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Field Name</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The name of the field containing the out of range value</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">Field Value</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The out of range value</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Min Range Value</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The minimum value allowed for the field</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyB-Column-Standard1">Max Range Value</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard1">The maximum value allowed for the field</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="858">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />858 - MCQ - Field value does not match an existing value</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="858">
+
+The message indicates that a field contains a value that does not match an existing list value. Add the value to FLOWCAL using the appropriate editor and resend the record.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Field Name</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The name of the field containing the non-matching value</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyB-Column-Standard1">Field Value</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard1">The non-matching value</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="859">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />859 - MCQ - Meter added to close group</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="859">
+
+The message indicates that the meter was added to a close group. Close group memberships are date-effective. Adding a meter to a close group will, if necessary, remove it from an existing close group for that same time period.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Close Group Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The close group number</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">Start Month</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The effective start month of the membership</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyB-Column-Standard2">End Month</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard2">The effective end month of the membership</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="860">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />860 - MCQ - Class-Direction relationship is not enabled</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="860">
+
+The message indicates that the given class and direction are not related in FLOWCAL. Update the class relationship in FLOWCAL and resend the record. The message will only appear if the Subtotal by Meter Class option is enabled (Settings \> FLOWCAL).
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyE-Column-Standard2">Class</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard2">The class name provided in the record</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyB-Column-Standard1">Direction</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard1">The direction name provided in the record</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="862">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />862 - MCQ - Close Group is disabled</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="862">
+
+This message indicates that an attempt was made to add a meter to a close group that is not enabled for use. Correct the data, or enable the group in FLOWCAL (Setup \> Close Groups), and resend the record.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyE-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyD-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+<tr class="TableStyle-FCtable-Body-Standard2">
+<td class="TableStyle-FCtable-BodyB-Column-Standard2">Close Group Number</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard2">The close group number</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+#### <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerexception MCTogglerHotSpot_ MCTogglerHotSpot_exception MCHotSpotImage" data-mc-targets="863">
+
+<img src="data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAQABAAAAgdAP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWBAQEAOw==" class="MCToggler_Image_Icon" data-mc-alt2="Open" width="16" height="11" alt="Closed" />863 - MCQ - Close Groups are not in use (Application Option not set)</a>
+
+<div class="drop-down" style="display: none;" mc-target-name="863">
+
+This message indicates that an attempt was made to update a close group but close groups are not enable in FLOWCAL. Set Close Schedule Type to Close Group (Settings \> FLOWCAL Configuration) and resend the record.
+
+<table class="TableStyle-FCtable" style="mc-table-style: url(&#39;../../../Resources/TableStyles/FCtable.css&#39;);margin-left: 0;margin-right: auto;width: 725px;" data-cellspacing="0">
+<thead>
+<tr class="TableStyle-FCtable-Head-Header1">
+<th colspan="2" class="TableStyle-FCtable-HeadD-Column-Header1">Message Data:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="TableStyle-FCtable-Body-Standard1">
+<td class="TableStyle-FCtable-BodyB-Column-Standard1">MCQ Meter Number</td>
+<td class="TableStyle-FCtable-BodyA-Column-Standard1">The meter number provided in the queue for processing</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>

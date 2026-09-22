@@ -3,6 +3,10 @@ site_description: End-user knowledge base for the FLOWCAL product suite
 site_author: FLOWCAL Team
 docs_dir: docs
 site_dir: site
+not_in_nav: |
+  help/Content/**
+  help/Default.md
+  help/Default_CSH.md
 
 theme:
   name: material
@@ -24,8 +28,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.instant
     - navigation.path
-    - navigation.prune
-    - navigation.expand
+    - navigation.sections
     - navigation.top
     - navigation.indexes
     - navigation.footer
@@ -57,7 +60,11 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: fc-mermaid-source
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
@@ -85,18 +92,66 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
-      - FLOWCAL Data Journey: getting-started/flowcal-data-journey.md
-  - Core Features:
-      - Meters: core-features/meters.md
-      - Volume Editor: core-features/volume-editor.md
-      - Locations: core-features/locations.md
-      - Tickets: core-features/tickets.md
-      - Rollup Viewers: core-features/rollup-viewers.md
-  - Practice:
+  - Start Here:
+    - What is FLOWCAL?: help/Content/FLOWCAL 10/Getting Started/What Is FLOWCAL.md
+    - FLOWCAL Data Journey: getting-started/flowcal-data-journey.md
+    - New Joiner Learning Path: learn/index.md
+    - Glossary and Acronyms: help/Content/FLOWCAL 10/_Glossary/Measurement Glossary.md
+  - Platform Setup and Administration:
+    - Overview: platform/index.md
+    - Installation:
+      - Oracle Database Installation: platform/installation.md
+      - FLOWCAL Application Installation: help/Content/FLOWCAL 10/Admin Options/Install & Configure Services.md
+      - SQL Developer Setup: platform/installation.md
+    - Systems and Database Checks: help/Content/FLOWCAL 10/Admin Options/Create Systems.md
+    - Users, Groups, and Security: help/Content/FLOWCAL 10/Settings Manager/Security/Group Access.md
+    - Configuration Reference: help/Content/FLOWCAL 10/Settings Manager/System/System Configuration/System Configuration.md
+  - Product Knowledge:
+    - Overview: product/index.md
+    - Products and Fluids: core-features/volume-editor.md
+    - Systems: help/Content/FLOWCAL 10/Admin Options/Create Systems.md
+    - Locations: help/Content/FLOWCAL 10/Locations/About Locations.md
+    - Location Fundamentals: core-features/locations.md
+    - Meters: help/Content/FLOWCAL 10/Meters/About Meters.md
+    - Meter Fundamentals: core-features/meters.md
+    - Assignments and Sources: help/Content/FLOWCAL 10/Source Analysis/Quality Assignment Editor/Configuring Assignments.md
+    - Entity Relationships: help/Content/FLOWCAL 10/Admin Options/Entity Relationship Diagrams.md
+  - Daily Operations:
+    - Overview: operations/index.md
+    - List Views, Queries, and Bulk Changes: help/Content/FLOWCAL 10/List Editor/List Editor.md
+    - File Imports: help/Content/FLOWCAL 10/Imports/Meter Data/Import Meter Data.md
+    - Tickets: help/Content/FLOWCAL 10/Tickets/Ticket Editor.md
+    - Tickets Overview: core-features/tickets.md
+    - Validation and Exceptions: help/Content/FLOWCAL 10/Exceptions/Exception Resolver/Exception Resolver.md
+    - Close Process: help/Content/FLOWCAL 10/Close Data/Close Groups/About Close Groups.md
+    - Post-Processing Approval (PPA): help/Content/FLOWCAL 10/PPA/PPA Editor.md
+  - Processing and Integration:
+    - Overview: processing/index.md
+    - Rollups: help/Content/FLOWCAL 10/Calculated Meter Editor/Formulas/Calculated Meter Rollup Process.md
+    - FcDataBoss: processing/index.md
+    - FcLoader: help/Content/FLOWCAL 10/Admin Options/FcLoader.md
+    - Imports and Automation: help/Content/FLOWCAL 10/Admin Options/Configure Imports.md
+    - Data Flow Reference: visual/index.md
+  - Reporting and Exports:
+    - Overview: reporting/index.md
+    - Reports: help/Content/FLOWCAL 10/Reports/Standard Reports.md
+    - Exports: help/Content/FLOWCAL 10/Reports/Exports.md
+    - Rollup Viewer: core-features/rollup-viewers.md
+  - Learn FLOWCAL:
+    - Overview: learn/index.md
+    - Video Walkthroughs: learn/videos.md
+    - Guided Learning Paths: getting-started/flowcal-data-journey.md
+    - Quizzes:
       - Getting Started Quiz: practice/getting-started-quiz.md
       - Core Features Quiz: practice/core-features-quiz.md
-  - Visual Story: visual/index.md
+    - Flashcards: practice/flashcards.md
+    - Visual Workflows: visual/index.md
+  - Reference:
+    - Overview: reference/index.md
+    - Internal Help Documentation: help/index.md
+    - FAQs and Troubleshooting: reference/index.md
+    - Glossary: help/Content/FLOWCAL 10/_Glossary/Measurement Glossary.md
+    - Release and Change Notes: help/Content/FLOWCAL 10/_Home Page Content/Release Note Index.md
 
 extra:
   generator: false
@@ -109,4 +164,6 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - javascripts/mermaid-config.js
   - javascripts/visual.js
+  - javascripts/flashcards.js

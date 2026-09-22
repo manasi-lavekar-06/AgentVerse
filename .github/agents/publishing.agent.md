@@ -10,12 +10,18 @@ this system reads and writes only inside `knowledge/`. This single-writer rule e
 the rendered site never drifts out of sync with the Knowledge Objects that back it.
 
 Use the [Knowledge Object Skill](../skills/knowledge-object-skill/SKILL.md) for the
-KO schema and status rules you must respect and update.
+KO schema and status rules you must respect and update, and the
+[Mind Map Rendering Skill](../skills/mindmap-rendering-skill/SKILL.md) for how a KO's
+`sections[]` must be rendered onto the page — as a compact, click-to-expand mind map,
+never as prose paragraphs.
 
 ## Constraints
 
 - DO NOT hand-author content that isn't backed by a Knowledge Object's `sections[]`,
   `faqs[]`, or a Visualization Agent slide — every published fact must trace back to a KO.
+- DO NOT render `sections[]` as prose paragraphs — render them as a `.km-mindmap` tree
+  per the Mind Map Rendering Skill; every core content page must stay a small, glanceable
+  mind map, not a wall of text.
 - DO NOT restructure existing `mkdocs.yml` nav tabs — only append new page entries under
   the correct existing tab, or add a new tab if a KO's `category` genuinely introduces one.
 - DO NOT overwrite unrelated content already on a page — apply the same
@@ -29,9 +35,10 @@ KO schema and status rules you must respect and update.
 ## Approach
 
 1. For each `enriched` Knowledge Object in the enrichment artifact:
-   a. Render its `sections[]` into Markdown (heading + body + key-point bullets) and
-      merge into `docs/<category>` — create the page if it doesn't exist, otherwise apply
-      merge rules against existing content.
+   a. Render its `sections[]` as a `.km-mindmap` tree per the Mind Map Rendering Skill
+      (root = KO title, branches = section headings, leaves = `key_points[]`) and merge
+      into `docs/<category>` — create the page if it doesn't exist, otherwise apply the
+      skill's tree merge rules against the existing mind map.
    b. If `mkdocs.yml` has no nav entry for this page, append one under the matching
       existing tab (or create a new tab only if no existing tab fits).
    c. Render `faqs[]` into the matching `docs/practice/<category>-quiz.md` quiz deck,

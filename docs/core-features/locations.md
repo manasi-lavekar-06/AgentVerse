@@ -10,8 +10,8 @@ tags:
 
 ## Core Concepts & Fundamentals
 
-Covers the concept of a FLOWCAL system (with "enterprise" as the default) and how
-locations are set up so that one or more meters can be added to them.
+Covers the FLOWCAL "enterprise" default system and how locations are set up so meters
+can be added to them.
 
 ## FLOWCAL System Architecture
 
@@ -42,24 +42,29 @@ graph TD
     style L fill:#0f7e5f,stroke:#E65100,stroke-width:3px,color:#fff
 ```
 
-## Systems and Enterprise
-
-FLOWCAL has a default system called enterprise. A customer may set up additional
-systems - for example, a separate system using a different set of units - alongside the
-default enterprise system.
-
-- The default FLOWCAL system is called enterprise.
-- Additional systems can be configured, such as one using a different unit set,
-  alongside enterprise.
-
-## Adding Meters to a Location
-
-A location represents a physical or logical grouping in FLOWCAL, and it is possible for
-multiple meters to belong to the same location. Meters are added to a location as part
-of setting it up.
-
-- A single location can contain multiple meters.
-- Meters are attached to a location during location setup.
+<div class="km-mindmap">
+<ul class="km-tree">
+<li class="km-root-item">
+<span class="km-node km-root">Locations &amp; Systems</span>
+<ul>
+<li class="km-branch-item">
+<span class="km-node km-branch">Systems and Enterprise</span>
+<ul>
+<li><span class="km-node km-leaf">The default FLOWCAL system is called enterprise.</span></li>
+<li><span class="km-node km-leaf">Additional systems can be configured, such as one using a different unit set, alongside enterprise.</span></li>
+</ul>
+</li>
+<li class="km-branch-item">
+<span class="km-node km-branch">Adding Meters to a Location</span>
+<ul>
+<li><span class="km-node km-leaf">A single location can contain multiple meters.</span></li>
+<li><span class="km-node km-leaf">Meters are attached to a location during location setup.</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 
 ## Location Organization Levels
 

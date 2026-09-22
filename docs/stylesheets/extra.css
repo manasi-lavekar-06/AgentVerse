@@ -1654,3 +1654,227 @@
   .vs-meter-types-grid { grid-template-columns: repeat(2, 1fr); }
   .vs-hier-node { padding: 0.4rem 0.7rem; font-size: 0.75rem; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   MIND MAP (km-mindmap) — renders a Knowledge Object's sections as a
+   colorful radial mind map (root bubble in the center, branch bubbles in a
+   ring, leaves fanned out further), driven by javascripts/mindmap.js.
+   The `.km-tree` rules below stay as a no-JS fallback (rendered as a plain
+   collapsible tree) and as the accessible, screen-reader-visible source list.
+════════════════════════════════════════════════════════════ */
+.km-mindmap {
+  position: relative;
+  margin: 1.75rem 0 2.25rem;
+  padding: 1.5rem 1rem;
+  overflow: auto;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Visually hidden (not display:none) so screen readers/no-JS visitors still
+   get the semantic list; sighted users see the `.km-radial` diagram instead. */
+.km-tree-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.km-tree,
+.km-tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 1.5rem 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.km-tree {
+  padding-top: 0;
+}
+
+.km-tree li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 1.5rem 0.75rem 0;
+}
+
+.km-tree > li {
+  padding-top: 0;
+}
+
+/* connector lines between a parent and its children */
+.km-tree li li::before,
+.km-tree li li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 1.5rem;
+  border-top: 2px solid var(--fc-border);
+}
+
+.km-tree li li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid var(--fc-border);
+}
+
+.km-tree li li:only-child::before,
+.km-tree li li:only-child::after { display: none; }
+.km-tree li li:only-child { padding-top: 0; }
+
+.km-tree li li:first-child::before { border: 0 none; }
+.km-tree li li:last-child::after   { border: 0 none; }
+.km-tree li li:last-child::before  { border-right: 2px solid var(--fc-border); border-radius: 0 6px 0 0; }
+.km-tree li li:first-child::after  { border-radius: 6px 0 0 0; }
+
+.km-node {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  border: 1px solid var(--fc-border);
+  background: #fff;
+  max-width: 230px;
+}
+
+.km-root {
+  background: var(--fc-navy);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  border-color: var(--fc-navy);
+}
+
+.km-branch {
+  background: var(--fc-amber);
+  color: #fff !important;
+  font-weight: 600;
+  border-color: var(--fc-amber);
+  cursor: pointer;
+  user-select: none;
+}
+
+.km-branch::after {
+  content: " −";
+  opacity: 0.75;
+  font-weight: 400;
+}
+
+.km-branch-item.km-collapsed > .km-branch::after { content: " +"; }
+.km-branch-item.km-collapsed > ul { display: none; }
+
+.km-leaf {
+  background: #fff;
+  color: var(--fc-dark);
+  font-size: 0.78rem;
+  max-width: 200px;
+}
+
+[data-md-color-scheme="slate"] .km-mindmap {
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.12);
+}
+
+[data-md-color-scheme="slate"] .km-node {
+  background: rgba(255,255,255,0.07);
+  color: #e8ebf3;
+  border-color: rgba(255,255,255,0.16);
+}
+
+[data-md-color-scheme="slate"] .km-tree li li::before,
+[data-md-color-scheme="slate"] .km-tree li li::after {
+  border-color: rgba(255,255,255,0.2);
+}
+
+@media (max-width: 600px) {
+  .km-node   { font-size: 0.75rem; padding: 0.35rem 0.6rem; max-width: 150px; }
+  .km-tree li { padding: 1.1rem 0.4rem 0; }
+}
+
+/* ---------- Radial mind map (JS-rendered, replaces the .km-tree above) ---------- */
+
+.km-radial {
+  position: relative;
+  flex: none;
+}
+
+.km-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.km-link {
+  fill: none;
+  stroke-width: 2.25;
+  opacity: 0.6;
+}
+
+.km-link-leaf {
+  stroke-width: 1.5;
+  stroke-dasharray: 2 5;
+  opacity: 0.55;
+}
+
+.km-rnode {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  line-height: 1.3;
+  text-align: center;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(13, 27, 42, 0.15);
+}
+
+.km-rroot {
+  background: linear-gradient(135deg, var(--fc-navy) 0%, var(--fc-navy-dark) 100%);
+  color: #fff !important;
+  font-weight: 700;
+  max-width: 210px;
+  padding: 0.65rem 1.1rem;
+  z-index: 3;
+  box-shadow: 0 4px 14px rgba(26, 39, 66, 0.4);
+}
+
+.km-rbranch {
+  color: #fff !important;
+  font-weight: 600;
+  max-width: 190px;
+  z-index: 2;
+  box-shadow: 0 3px 10px rgba(13, 27, 42, 0.22);
+}
+
+.km-rleaf {
+  font-weight: 500;
+  max-width: 170px;
+  z-index: 1;
+}
+
+[data-md-color-scheme="slate"] .km-radial .km-link {
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .km-rroot, .km-rbranch { max-width: 150px; }
+  .km-rleaf { max-width: 130px; }
+}
+

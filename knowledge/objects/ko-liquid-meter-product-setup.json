@@ -34,22 +34,25 @@
     },
     {
       "heading": "Periodic vs Batch Data and Contract Hour",
-      "body": "Data entry can be periodic (e.g. hourly, where the grid shows one row per hour) or batch, where liquid data arrives less frequently, such as every two or fifteen days, rather than on a fixed period. A related setting is the contract hour and day, which defines the start of the operating day (for example, starting at 9 o'clock on the first day of the month) - this selection determines how the data grid is displayed.",
+      "body": "Data entry can be periodic (e.g. hourly, where the grid shows one row per hour) or batch, where liquid data arrives less frequently, such as every two or fifteen days, rather than on a fixed period. A related setting is the contract hour and day, which defines the start of the operating day (for example, starting at 9 o'clock on the first day of the month) - this selection determines how the data grid is displayed. In the Meter Editor, an Ignore Contract Hour option lets a meter be reported at a different contract hour than the one specified on the field device itself.",
       "key_points": [
         "Periodic (e.g. hourly) entry shows one grid row per period.",
         "Batch data arrives at irregular intervals (e.g. every two or fifteen days) rather than on a fixed period.",
-        "Contract hour and day define when the operating day/month starts and control how the data grid displays."
+        "Contract hour and day define when the operating day/month starts and control how the data grid displays.",
+        "The Meter Editor's Ignore Contract Hour option allows reporting at a contract hour different from the field device's own contract hour."
       ]
     }
   ],
   "tags": ["volume-editor", "liquid-meter", "product-setup", "density", "meter-factor", "periodic", "batch", "contract-hour"],
   "sources": [
-    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" },
+    { "transcript": "video_6y4sdfrp8zp_19_160_1240x698_transcript.txt", "extracted_at": "2026-09-21" }
   ],
   "relationships": [
     { "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
     { "type": "related-to", "target": "ko-meter-fundamentals" },
-    { "type": "prerequisite-of", "target": "ko-locations-and-systems" }
+    { "type": "prerequisite-of", "target": "ko-locations-and-systems" },
+    { "type": "related-to", "target": "ko-meter-editor-overview" }
   ],
   "faqs": [
     {
@@ -84,6 +87,17 @@
       ],
       "correct_index": 0,
       "explanation": "The Periodic vs Batch Data and Contract Hour section explains batch data arrives irregularly (e.g. every two or fifteen days) rather than on a fixed period."
+    },
+    {
+      "question": "What does the Meter Editor's Ignore Contract Hour option allow?",
+      "options": [
+        "Reporting a meter at a different contract hour than its field device",
+        "Disabling the edit indicator flag",
+        "Switching a meter between gas and liquid types",
+        "Bypassing PPA approval for closed meters"
+      ],
+      "correct_index": 0,
+      "explanation": "The Periodic vs Batch Data and Contract Hour section notes the Meter Editor's Ignore Contract Hour option lets a meter be reported at a contract hour different from its field device."
     }
   ],
   "visual_story": {
@@ -91,7 +105,7 @@
     "journey_order": 3,
     "slide_hint": "amber-dark theme with a Volume Editor grid mockup and field chips for density, meter factor, pressure/temperature base"
   },
-  "version": 3,
+  "version": 5,
   "created_at": "2026-09-21",
   "updated_at": "2026-09-21",
   "published_pages": ["core-features/volume-editor.md", "visual/index.md", "practice/core-features-quiz.md"]

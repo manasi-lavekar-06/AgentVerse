@@ -51,6 +51,102 @@ viewers.
 <span class="qz-opt">Batch data requires PPA approval before entry</span>
 </div>
 
+<div class="qz-q" data-correct="2" data-explanation="The Meter Types and Characteristics section notes these values are visible read-only on the Meter Editor's Calculations tab, sourced from the meter's characteristics.">
+<p class="qz-question-text">On which Meter Editor tab can a meter's pressure base, temperature base, heating value base condition, calculation method, and sea method be viewed?</p>
+<span class="qz-opt">Custom Fields tab</span>
+<span class="qz-opt">Quality tab</span>
+<span class="qz-opt">Calculations tab</span>
+<span class="qz-opt">Exceptions tab</span>
+</div>
+
+<div class="qz-q" data-correct="0" data-explanation="The Periodic vs Batch Data and Contract Hour section notes the Meter Editor's Ignore Contract Hour option lets a meter be reported at a contract hour different from its field device.">
+<p class="qz-question-text">What does the Meter Editor's Ignore Contract Hour option allow?</p>
+<span class="qz-opt">Reporting a meter at a different contract hour than its field device</span>
+<span class="qz-opt">Disabling the edit indicator flag</span>
+<span class="qz-opt">Switching a meter between gas and liquid types</span>
+<span class="qz-opt">Bypassing PPA approval for closed meters</span>
+</div>
+
+<div class="qz-q" data-correct="0" data-explanation="The Accessing the Meter Editor and Selecting a Device section states it can be opened from the dashboard tile or from Setup > Meter Editor.">
+<p class="qz-question-text">Besides the Meter Editor tile on the dashboard, where else can the Meter Editor be opened from?</p>
+<span class="qz-opt">The Setup menu under the Meter category</span>
+<span class="qz-opt">The Reports menu under Analytics</span>
+<span class="qz-opt">The Volume Editor's characteristic view</span>
+<span class="qz-opt">The Roll Up Viewer toolbar</span>
+</div>
+
+<div class="qz-q" data-correct="1" data-explanation="The General Tab section notes meter characteristics are viewable and editable in the Volume Editor's characteristic view.">
+<p class="qz-question-text">Where are a meter's characteristics (shown read-only on the General tab) actually edited?</p>
+<span class="qz-opt">In the Custom Fields tab</span>
+<span class="qz-opt">In the Volume Editor's characteristic view</span>
+<span class="qz-opt">In the Roll Up Viewer</span>
+<span class="qz-opt">In the PPA approval workflow</span>
+</div>
+
+<div class="qz-q" data-correct="2" data-explanation="The Custom Fields Tab section states there are 60 user-defined fields for company-specific information.">
+<p class="qz-question-text">How many user-defined Custom Fields are available in the Meter Editor?</p>
+<span class="qz-opt">25</span>
+<span class="qz-opt">30</span>
+<span class="qz-opt">60</span>
+<span class="qz-opt">100</span>
+</div>
+
+<div class="qz-q" data-correct="0" data-explanation="The Calculations Tab section describes it as read-only informational data populated from the meter's characteristics validation.">
+<p class="qz-question-text">What kind of tab is the Calculations tab in the Meter Editor?</p>
+<span class="qz-opt">Read-only, showing base conditions from the meter's characteristics</span>
+<span class="qz-opt">Editable, letting a user set pressure base directly</span>
+<span class="qz-opt">A tab for creating custom fields</span>
+<span class="qz-opt">A tab for managing user groups</span>
+</div>
+
+<div class="qz-q" data-correct="1" data-explanation="The Quality Tab section explains bad values can be Replaced (overwritten) or Filled In (only when missing).">
+<p class="qz-question-text">On the Quality tab, what are the two ways bad incoming quality values can be handled?</p>
+<span class="qz-opt">Delete or Ignore</span>
+<span class="qz-opt">Replace or Fill In</span>
+<span class="qz-opt">Estimate or Flag</span>
+<span class="qz-opt">Export or Archive</span>
+</div>
+
+<div class="qz-q" data-correct="2" data-explanation="The Meter Data Handling Options section says Periodic Snap can correct data timing to the top of the hour, e.g. snapping 7:00:15 to 7:00:00.">
+<p class="qz-question-text">What does the Periodic Snap option do?</p>
+<span class="qz-opt">Syncs operational limits to contractual limits</span>
+<span class="qz-opt">Flags a meter as third-party</span>
+<span class="qz-opt">Corrects data timing to the top of the hour on import</span>
+<span class="qz-opt">Controls the print option on the volume statement</span>
+</div>
+
+<div class="qz-q" data-correct="3" data-explanation="The Frozen Values Tab and Component Validation section describes validation of components like CO2 through water plus totals, flagging repeats and percent-difference thresholds.">
+<p class="qz-question-text">What does the Frozen Values tab validate?</p>
+<span class="qz-opt">Ticket point-in-time entries</span>
+<span class="qz-opt">User group privilege levels</span>
+<span class="qz-opt">Rollup aggregation levels</span>
+<span class="qz-opt">Incoming gas component data and component totals for repeating or percent-difference issues</span>
+</div>
+
+<div class="qz-q" data-correct="2" data-explanation="The Final Form Validations section states validations are set on an hourly, daily, or monthly basis for volume, energy, or mass.">
+<p class="qz-question-text">At what intervals can Final Form validations be set?</p>
+<span class="qz-opt">Only hourly</span>
+<span class="qz-opt">Only monthly</span>
+<span class="qz-opt">Hourly, daily, or monthly</span>
+<span class="qz-opt">Weekly, quarterly, or annually</span>
+</div>
+
+<div class="qz-q" data-correct="1" data-explanation="The Exceptions Tab and Audit Criteria section gives examples of an absolute volume limit (e.g. 1000 MCF) or a percentage change between two devices (e.g. 2%).">
+<p class="qz-question-text">What can audit criteria flag on the Exceptions tab?</p>
+<span class="qz-opt">A user exceeding login attempts</span>
+<span class="qz-opt">A device exceeding a volume limit or a monthly volume change percentage between two devices</span>
+<span class="qz-opt">A ticket missing a product selection</span>
+<span class="qz-opt">A custom field left blank</span>
+</div>
+
+<div class="qz-q" data-correct="3" data-explanation="The Auto-Estimate for Missing Data section states enabling auto-estimate lets FLOWCAL estimate values using defined techniques.">
+<p class="qz-question-text">What happens when auto-estimate is enabled and a meter is missing data?</p>
+<span class="qz-opt">The meter is automatically closed</span>
+<span class="qz-opt">The data is discarded</span>
+<span class="qz-opt">PPA approval is triggered automatically</span>
+<span class="qz-opt">FLOWCAL estimates values for the missing data using defined techniques</span>
+</div>
+
 <div class="qz-q" data-correct="1" data-explanation="The Systems and Enterprise section states FLOWCAL's default system is called enterprise.">
 <p class="qz-question-text">What is the name of FLOWCAL's default system?</p>
 <span class="qz-opt">Standard</span>

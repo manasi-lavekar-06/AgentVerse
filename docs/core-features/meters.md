@@ -10,8 +10,7 @@ tags:
 ## Core Concepts & Fundamentals
 
 Explains what a meter represents physically in FLOWCAL, how a FLOCON filter attaches to
-it to capture raw data, and how meter type and characteristics (such as base pressure
-and base temperature) affect how flow is calculated.
+it, and how meter characteristics affect how flow is calculated.
 
 ## Meter Data Flow
 
@@ -67,41 +66,4 @@ flow.
 
 - [FLOWCAL Data Journey Overview](../getting-started/flowcal-data-journey.md)
 - [Liquid Meter and Product Setup](volume-editor.md)
-
-## Images & Visual References
-
-### Meter Types Overview
-
-![Meter Types](../assets/images/meters/extracted_image_0181.png "Common Meter Types")
-
-### Meter Installation Visuals
-
-![Installation](../assets/images/meters/extracted_image_0190.png "Meter Installation")
-![Configuration](../assets/images/meters/extracted_image_0200.png "Meter Configuration")
-
----
-
-## Implementation Details
-
-## Overview
-
-- # About Meters
-
- About Meters A meter is a physical device used in the field to measure the flow of gas and liquid products.
-- Each meter type has unique identifiers and characteristics.
-
-## Key Characteristics
-
-- FLOWCAL supports several meter types, including cone, Coriolis, orifice, positive displacement, turbine, and ultrasonic.
-- Meter Types Cone Meter Cone meters use a conical position inside of the pipe to cause a pressure drop.
-- The amount of the pressure drop is used to calculate the amount of mass and volume being moved.
-- Coriolis Flow Meter Coriolis flow meters use vibrating tubes to calculate the mass and density of the product passing through it.
-- Line Pack Line pack meters are used to monitor pipeline inventory.
-- Line pack meter periodics reflect pipeline inventory at a particular time period.
-
-## Related Topics
-
-- Configuration and Setup
-- Data Management
-- Reports and Analytics
-
+- [Meter Editor Overview](meter-editor.md)

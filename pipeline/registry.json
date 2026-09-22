@@ -140,7 +140,21 @@
         "Meter types (Coriolis/turbine) and pressure/temperature base"
       ],
       "sources": [
-        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt",
+        "video_6y4sdfrp8zp_19_160_1240x698_transcript.txt"
+      ]
+    },
+    "core-features/meter-editor.md": {
+      "topics_covered": [
+        "Accessing the Meter Editor and selecting a device",
+        "General, Custom Fields, Calculations, and Quality tabs",
+        "Meter data handling options (Update Meter Name, Periodic Snap, etc.)",
+        "Frozen Values and Final Form validations",
+        "Exceptions tab and audit criteria",
+        "Auto-estimate for missing data"
+      ],
+      "sources": [
+        "video_6y4sdfrp8zp_19_160_1240x698_transcript.txt"
       ]
     },
     "core-features/volume-editor.md": {
@@ -151,7 +165,8 @@
         "Periodic vs batch data and contract hour/day"
       ],
       "sources": [
-        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt"
+        "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt",
+        "video_6y4sdfrp8zp_19_160_1240x698_transcript.txt"
       ]
     },
     "core-features/locations.md": {

@@ -16,21 +16,24 @@
     },
     {
       "heading": "Meter Types and Characteristics",
-      "body": "Different meter types - such as Coriolis or turbine - calculate flow differently, so each meter's characteristics must be defined. Two key characteristics are the pressure base and the temperature base: the temperature of the product, the meter's own temperature, and the pressure base together determine how raw data is converted into flow.",
+      "body": "Different meter types - such as Coriolis or turbine - calculate flow differently, so each meter's characteristics must be defined. Two key characteristics are the pressure base and the temperature base: the temperature of the product, the meter's own temperature, and the pressure base together determine how raw data is converted into flow. In the Meter Editor, these values are visible read-only on the Calculations tab, alongside heating value base condition, calculation method, and sea method.",
       "key_points": [
         "Meter types include Coriolis and turbine, each with its own calculation method.",
         "Pressure base and temperature base are core characteristics assigned to a meter.",
-        "Both product temperature and meter temperature feed into the flow calculation."
+        "Both product temperature and meter temperature feed into the flow calculation.",
+        "The Meter Editor's Calculations tab shows pressure base, temperature base, heating value base condition, calculation method, and sea method as read-only, sourced from the meter's characteristics."
       ]
     }
   ],
   "tags": ["meters", "flocon", "coriolis", "turbine", "pressure-base", "temperature-base"],
   "sources": [
-    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" }
+    { "transcript": "FLOWCAL Overview-20230317_163356-Meeting Recording_transcript.txt", "extracted_at": "2026-09-21" },
+    { "transcript": "video_6y4sdfrp8zp_19_160_1240x698_transcript.txt", "extracted_at": "2026-09-21" }
   ],
   "relationships": [
     { "type": "part-of", "target": "ko-flowcal-data-journey-overview" },
-    { "type": "prerequisite-of", "target": "ko-liquid-meter-product-setup" }
+    { "type": "prerequisite-of", "target": "ko-liquid-meter-product-setup" },
+    { "type": "related-to", "target": "ko-meter-editor-overview" }
   ],
   "faqs": [
     {
@@ -54,6 +57,17 @@
       ],
       "correct_index": 1,
       "explanation": "The Meter Types and Characteristics section states that pressure base and temperature base, along with product/meter temperature, determine the flow calculation."
+    },
+    {
+      "question": "On which Meter Editor tab can a meter's pressure base, temperature base, heating value base condition, calculation method, and sea method be viewed?",
+      "options": [
+        "Custom Fields tab",
+        "Quality tab",
+        "Calculations tab",
+        "Exceptions tab"
+      ],
+      "correct_index": 2,
+      "explanation": "The Meter Types and Characteristics section notes these values are visible read-only on the Meter Editor's Calculations tab, sourced from the meter's characteristics."
     }
   ],
   "visual_story": {
@@ -61,7 +75,7 @@
     "journey_order": 2,
     "slide_hint": "navy-dark theme with meter-type cards (Coriolis/turbine) highlighting pressure base and temperature base"
   },
-  "version": 3,
+  "version": 5,
   "created_at": "2026-09-21",
   "updated_at": "2026-09-21",
   "published_pages": ["core-features/meters.md", "visual/index.md", "practice/core-features-quiz.md"]

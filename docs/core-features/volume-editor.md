@@ -1,10 +1,14 @@
 ---
+title: Liquid Meter and Product Setup
+description: Liquid Meter and Product Setup - Complete Reference (Core Concepts)
 tags:
   - volume-editor
   - liquid-meter
 ---
 
 # Liquid Meter and Product Setup
+
+## Core Concepts & Fundamentals
 
 The Volume Editor is where liquid and gas meter data is entered, validated, sourced, closed, and approved.
 
@@ -315,6 +319,16 @@ The Volume Editor is where liquid and gas meter data is entered, validated, sour
 </ul>
 
 </div>
+
+## Volume Editor Controls
+
+| Control | Function | Impact |
+|---|---|---|
+| **Data Grid** | Enter volume readings | Triggers flow calculation |
+| **Contract Hour** | Set day start time | Affects grid layout |
+| **Period Type** | Choose Periodic/Batch | Changes data frequency |
+| **Meter Factor** | Adjustment multiplier | Modifies flow results |
+| **Pressure/Temp** | Base references | Standardizes flow values |
 
 ## See Also
 

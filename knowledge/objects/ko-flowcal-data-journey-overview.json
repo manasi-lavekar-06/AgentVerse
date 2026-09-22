@@ -36,7 +36,8 @@
     { "type": "related-to", "target": "ko-liquid-meter-product-setup" },
     { "type": "related-to", "target": "ko-locations-and-systems" },
     { "type": "related-to", "target": "ko-tickets-overview" },
-    { "type": "related-to", "target": "ko-rollup-viewer-basics" }
+    { "type": "related-to", "target": "ko-rollup-viewer-basics" },
+    { "type": "related-to", "target": "ko-meter-editor-overview" }
   ],
   "faqs": [
     {
@@ -78,7 +79,7 @@
     "journey_order": 1,
     "slide_hint": "intro slide with floating data-particle background introducing the FLOWCAL data journey"
   },
-  "version": 3,
+  "version": 4,
   "created_at": "2026-09-21",
   "updated_at": "2026-09-21",
   "published_pages": ["getting-started/flowcal-data-journey.md", "visual/index.md", "practice/getting-started-quiz.md"]

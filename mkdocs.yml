@@ -24,7 +24,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.instant
     - navigation.path
-    - navigation.prune
+    - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.indexes
@@ -57,7 +57,11 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
@@ -85,16 +89,69 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
-      - FLOWCAL Data Journey: getting-started/flowcal-data-journey.md
-  - Core Features:
+  - Start Here:
+    - FLOWCAL Data Journey: getting-started/flowcal-data-journey.md
+    - Hydrocarbon Fundamentals: getting-started/hydrocarbon-fundamentals.md
+    - Natural Gas Measurement Process: getting-started/natural-gas-101.md
+    - Well Extraction and Hydraulic Fracturing: getting-started/well-extraction.md
+  - Contents: contents.md
+  - Product Knowledge:
+    - Overview: product/index.md
+    - Meters and Fundamentals:
       - Meters: core-features/meters.md
+      - Meter Calibration and Testing: core-features/meter-testing.md
+    - Locations and Systems:
+      - Locations: core-features/locations.md
+      - Gathering Systems: core-features/gathering-systems.md
+    - Infrastructure:
+      - Pipeline Infrastructure: core-features/pipelines.md
+      - Gas Distribution: core-features/distribution.md
+    - Data Processing:
+      - Separation and Well Stream Factors: core-features/separation.md
       - Meter Editor: core-features/meter-editor.md
       - Volume Editor: core-features/volume-editor.md
-      - Locations: core-features/locations.md
-      - Tickets: core-features/tickets.md
-      - Rollup Viewers: core-features/rollup-viewers.md
-  - Visual Story: visual/index.md
+  - Daily Operations:
+    - Overview: operations/index.md
+    - Tickets: core-features/tickets.md
+    - Toolbox: core-features/toolbox.md
+  - Reporting and Exports:
+    - Overview: reporting/index.md
+    - Reports: core-features/reports.md
+    - Rollup Viewers: core-features/rollup-viewers.md
+  - Learn FLOWCAL:
+    - Overview: learn/index.md
+    - Quizzes:
+      - Getting Started Quiz: practice/getting-started-quiz.md
+      - Core Features Quiz: practice/core-features-quiz.md
+    - Visual Workflows: visual/index.md
+  - Reference:
+    - Overview: reference/index.md
+    - Glossary: core-features/glossary.md
+    - Advanced Topics:
+      - Admin Options: core-features/admin-options.md
+      - Application Interface: core-features/application-interface.md
+      - Auto Edits: core-features/auto-edits.md
+      - BLM Compliance: core-features/blm.md
+      - Business Month Editor: core-features/business-month-editor.md
+      - Calculated Meter Editor: core-features/calculated-meter-editor.md
+      - Close Dates Editor: core-features/close-data.md
+      - Comparison Location Editor: core-features/comparison-locations.md
+      - Dashboard Manager: core-features/dashboard-manager.md
+      - Densitometer Editor: core-features/densitometer-editor.md
+      - Edit Approvals: core-features/edit-approvals.md
+      - External Volume Interface: core-features/external-volume-interface.md
+      - FLOWCAL 10 Getting Started: core-features/flowcal10-getting-started.md
+      - Imports: core-features/imports.md
+      - Liquid Cavern Editor: core-features/liquid-cavern-editor.md
+      - List Editor: core-features/list-editor.md
+      - Message Directory: core-features/messages.md
+      - PPA Editor: core-features/ppa.md
+      - Sample Analyses: core-features/sample-analyses.md
+      - Set Points: core-features/set-points.md
+      - Settings Manager: core-features/settings-manager.md
+      - Sources: core-features/sources.md
+      - Tank Editor: core-features/tank-editor.md
+      - Business Requirements Document: core-features/brd.md
 
 extra:
   generator: false
@@ -107,9 +164,11 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
   - javascripts/visual.js
   - javascripts/flowchart.js
   - javascripts/diagram.js
   - javascripts/slideshow.js
   - javascripts/quiz.js
   - javascripts/flashcards.js
+  - javascripts/contents.js

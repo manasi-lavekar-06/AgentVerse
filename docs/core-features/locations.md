@@ -1,4 +1,6 @@
 ---
+title: Locations and Systems
+description: Locations and Systems - Complete Reference (Core Concepts)
 tags:
   - locations
   - systems

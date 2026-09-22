@@ -1,9 +1,13 @@
 ---
+title: Tickets Overview
+description: Tickets Overview - Complete Reference (Core Concepts)
 tags:
   - tickets
 ---
 
 # Tickets Overview
+
+## Core Concepts & Fundamentals
 
 Tickets capture single-moment transactions, distinct from a meter's periodic record, and can be created, assigned, closed, edited, and reopened.
 
